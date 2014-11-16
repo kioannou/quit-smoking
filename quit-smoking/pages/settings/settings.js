@@ -42,6 +42,15 @@
         else if (isNaN(howMany)) {
             alert("You have to input a NUMBER in How many cigarettes per day field!");
         }
+        else if (costOfAPacket=="" && howMany==""){
+            alert("You have to put numbers in the following inputs");
+        }
+        else if (costOfAPacket == "") {
+            alert("The cost input is empty");
+        }
+        else if (howMany == "") {
+            alert("The how many input is empty");
+        }
         else {
 
             var settingsExposer = {
@@ -71,7 +80,7 @@
     };
 
     function setUserYear() {
-        var userYearIF = document.getElementById("day").value;
+        var userYearIF = document.getElementById("year").value;
         return userYearIF;
     };
 
@@ -79,25 +88,6 @@
         var msgBox = new Windows.UI.Popups.MessageDialog(message);
         msgBox.showAsync();
     }
-
-
-    
-    /*function calculation() {
-        
-
-        var userMonth = document.getElementById("month").value;
-
-        var userYear = document.getElementById("year").value;
-
-        var today = new Date();
-        var todayDay = today.getDate();
-        var todayMonth = today.getMonth()+1; //January is 0!
-        var todayYear = today.getFullYear();
-
-        var days = (Math.abs(todayDay-userDay))+(Math.abs(todayMonth-userMonth))*30+(Math.abs(todayYear-userYear))*365;
-
-        
-    };*/
     
 
 })();

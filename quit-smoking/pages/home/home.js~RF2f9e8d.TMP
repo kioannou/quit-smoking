@@ -8,7 +8,6 @@
 
             // TODO: Initialize the page here.
             WinJS.Utilities.query("a").listen("click", navigateToSettings, false);
-
             if (typeof Settings != "undefined") {
                 var homeUserDay = Settings.userDay;
                 var homeUserMonth = Settings.userMonth;
@@ -16,7 +15,6 @@
                 var homeCostOfAPacket = Settings.costOfAPacket;
                 var homeHowMany = Settings.howMany;
 
-                
                 var days = DaysCalculation(homeUserDay, homeUserMonth, homeUserYear);
                 var cigarettesNotSmoked = cigarettesNotSmokedCalculation(days, homeHowMany);
                 var lifeSaved = cigarettesNotSmoked * 11;
@@ -30,9 +28,10 @@
                 document.getElementById("money").innerHTML = moneySaved;
                 document.getElementById("perMonth").innerHTML = moneyMonth;
                 document.getElementById("inAYear").innerHTML = moneyYear;
+                
 
             } else {
-                alert("Go to Settings for configuration");
+                alert("Go to Settings for configuration")
             }
 
         },
@@ -48,17 +47,12 @@
 
     function DaysCalculation(homeUserDayCalc,homeUserMonthCalc,homeUserYearCalc) {
         var today = new Date();
-        var todayDay = today.getDate();
+        var todayDay = today.getDay();
         var todayMonth = today.getMonth() + 1; //January is 0!
         var todayYear = today.getFullYear();
 
-        var daysDiff = Math.abs(todayDay - homeUserDayCalc);
-        var monthsDiff = Math.abs(todayMonth - homeUserMonthCalc) * 30;
-        var yearsDiff = Math.abs(todayYear - homeUserYearCalc) * 365;
-        var daysCalc = daysDiff + monthsDiff + yearsDiff;
-       
-
-       return daysCalc;
+        var daysCalc = (Math.abs(todayDay - homeUserDayCalc)) + (Math.abs(todayMonth - homeUserMonthCalc)) * 30 + (Math.abs(todayYear - homeUserYearCalc)) * 365;
+        return daysCalc;
     }
 
     function cigarettesNotSmokedCalculation(daysCalc,homeHowManyCalc) {
@@ -73,7 +67,7 @@
     }
 
     function moneyMonthCalculation(homeCostOfAPacketCalc, homeHowManyCalc) {
-        var moneyMonthCalc = (homeHowManyCalc * 30) * (homeCostOfAPacketCalc/20);
+        var moneyMonthCalc = (homeHowManyCalc * 30) * (homeCostOfAPacketCalc * 20);
         return moneyMonthCalc;
     }
 

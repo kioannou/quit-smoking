@@ -13,8 +13,10 @@
     margin-left: -96px;
 }
 
+
+
 #motivationFlipView {
-    height:260px;
-    width:230px;
-    border:1px white;
+    width: 360px;
+    height: 230px;
+    border: solid 1px white;
 }
