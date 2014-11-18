@@ -14,10 +14,11 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
-                
+              
             } else {
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
+               
             }
 
             nav.history = app.sessionState.history || {};
@@ -45,10 +46,6 @@
         app.sessionState.history = nav.history;
     };
 
-    function alert(message) {
-        var msgBox = new Windows.UI.Popups.MessageDialog(message);
-        msgBox.showAsync();
-    }
-
+    
     app.start();
 })();

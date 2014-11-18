@@ -7,9 +7,22 @@
         ready: function (element, options) {
 
             // TODO: Initialize the page here.
-            WinJS.Utilities.query("a").listen("click", navigateToSettings, false);
 
-            if (typeof Settings != "undefined") {
+            //Registering the event handler for navigation to Settings.html
+            WinJS.Utilities.query("a").listen("click", this.navigateToSettings, false);
+
+            //Restore the app data
+            var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+            var savedDay = roamingSettings.values["savedDay"];
+            var savedMonth = roamingSettings.values["savedMonth"];
+            var savedYear = roamingSettings.values["savedYear"];
+            var savedCost = roamingSettings.values["savedCost"];
+            var savedHowMany = roamingSettings.values["savedHowMany"];
+
+
+            if (typeof Settings != "undefined")
+
+            {
                 var homeUserDay = Settings.userDay;
                 var homeUserMonth = Settings.userMonth;
                 var homeUserYear = Settings.userYear;
@@ -17,11 +30,11 @@
                 var homeHowMany = Settings.howMany;
 
                 
-                var days = DaysCalculation(homeUserDay, homeUserMonth, homeUserYear);
-                var cigarettesNotSmoked = cigarettesNotSmokedCalculation(days, homeHowMany);
+                var days = this.DaysCalculation(homeUserDay, homeUserMonth, homeUserYear);
+                var cigarettesNotSmoked = this.cigarettesNotSmokedCalculation(days, homeHowMany);
                 var lifeSaved = cigarettesNotSmoked * 11;
-                var moneySaved = moneySavedCalculation(cigarettesNotSmoked, homeCostOfAPacket);
-                var moneyMonth = moneyMonthCalculation(homeCostOfAPacket, homeHowMany);
+                var moneySaved = this.moneySavedCalculation(cigarettesNotSmoked, homeCostOfAPacket);
+                var moneyMonth = this.moneyMonthCalculation(homeCostOfAPacket, homeHowMany);
                 var moneyYear = moneyMonth * 12;
 
                 document.getElementById("days").innerHTML = days;
@@ -31,22 +44,44 @@
                 document.getElementById("perMonth").innerHTML = moneyMonth;
                 document.getElementById("inAYear").innerHTML = moneyYear;
 
-            } else {
-                alert("Go to Settings for configuration");
+            }else if (savedDay && savedMonth && savedYear && savedCost && savedHowMany){
+                
+               
+                var homeUserDay = savedDay;
+                var homeUserMonth = savedMonth;
+                var homeUserYear = savedYear;
+                var homeCostOfAPacket = savedCost;
+                var homeHowMany = savedHowMany;
+
+
+                var days = this.DaysCalculation(homeUserDay, homeUserMonth, homeUserYear);
+                var cigarettesNotSmoked = this.cigarettesNotSmokedCalculation(days, homeHowMany);
+                var lifeSaved = cigarettesNotSmoked * 11;
+                var moneySaved = this.moneySavedCalculation(cigarettesNotSmoked, homeCostOfAPacket);
+                var moneyMonth = this.moneyMonthCalculation(homeCostOfAPacket, homeHowMany);
+                var moneyYear = moneyMonth * 12;
+
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("not").innerHTML = cigarettesNotSmoked;
+                document.getElementById("life").innerHTML = lifeSaved;
+                document.getElementById("money").innerHTML = moneySaved;
+                document.getElementById("perMonth").innerHTML = moneyMonth;
+                document.getElementById("inAYear").innerHTML = moneyYear;
+            
+
+            }else{
+                this.alert("Go to Settings for configuration");
             }
 
         },
 
-       
-    });
-
-    function navigateToSettings(eventInfo) {
+       navigateToSettings : function (eventInfo) {
         eventInfo.preventDefault();
         var link = eventInfo.target;
         WinJS.Navigation.navigate(link.href);
-    }
-
-    function DaysCalculation(homeUserDayCalc,homeUserMonthCalc,homeUserYearCalc) {
+       },
+       
+       DaysCalculation : function (homeUserDayCalc,homeUserMonthCalc,homeUserYearCalc) {
         var today = new Date();
         var todayDay = today.getDate();
         var todayMonth = today.getMonth() + 1; //January is 0!
@@ -59,29 +94,32 @@
        
 
        return daysCalc;
-    }
-
-    function cigarettesNotSmokedCalculation(daysCalc,homeHowManyCalc) {
+       },
+       
+       cigarettesNotSmokedCalculation : function (daysCalc,homeHowManyCalc) {
         var cigarettesNotSmokedCalc = daysCalc * homeHowManyCalc;
         return cigarettesNotSmokedCalc;
-    }
-
-
-    function moneySavedCalculation(cigarettesNotSmokedCalc, homeCostOfAPacketCalc) {
+       },
+       
+        
+       moneySavedCalculation : function (cigarettesNotSmokedCalc, homeCostOfAPacketCalc) {
         var moneySavedCalc = cigarettesNotSmokedCalc * (homeCostOfAPacketCalc / 20);
         return moneySavedCalc;
-    }
-
-    function moneyMonthCalculation(homeCostOfAPacketCalc, homeHowManyCalc) {
-        var moneyMonthCalc = (homeHowManyCalc * 30) * (homeCostOfAPacketCalc/20);
-        return moneyMonthCalc;
-    }
-
-
-    function alert(message) {
-        var msgBox = new Windows.UI.Popups.MessageDialog(message);
-        msgBox.showAsync();
-    }
+       },
+       
+        
+       moneyMonthCalculation : function (homeCostOfAPacketCalc, homeHowManyCalc) {
+           var moneyMonthCalc = (homeHowManyCalc * 30) * (homeCostOfAPacketCalc / 20);
+           return moneyMonthCalc;
+       },
 
 
-})();
+       alert: function (message) {
+           var msgBox = new Windows.UI.Popups.MessageDialog(message);
+           msgBox.showAsync();
+       }
+
+
+    });
+
+ })();
