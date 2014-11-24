@@ -9,17 +9,34 @@
     var sched = WinJS.Utilities.Scheduler;
     var ui = WinJS.UI;
 
+    //Registering the Resume event handler.
+    Windows.UI.WebUI.WebUIApplication.addEventListener("resuming", resumingHandler, false);
+
+    //application is activated.
     app.addEventListener("activated", function (args) {
+
+        //Preserved this code because in line 44 halndles the "Splash screen" promise.
         if (args.detail.kind === activation.ActivationKind.launch) {
-            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
-              
-            } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
-               
-            }
+            
+
+            //Application saves the previous execution state.
+            WinJS.Application.sessionState.previousExecutionState =
+                args.detail.previousExecutionState;
+
+            //Checks if the application relaunched while already running. 
+            //If so it delays 1300 ms the call of next() function for DOM to finish loading.
+            if (typeof Home !== "undefined") {
+                if (app.sessionState.previousExecutionState === 1) {
+                    WinJS.Promise.timeout(1300).then(function () {
+                        Home.next();
+                    });
+                }
+                else {
+                    Home.next();
+                }
+            };
+
+
 
             nav.history = app.sessionState.history || {};
             nav.history.current.initialPlaceholder = true;
@@ -35,7 +52,10 @@
             });
 
             args.setPromise(p);
+
+           
         }
+
     });
 
     app.oncheckpoint = function (args) {
@@ -46,6 +66,11 @@
         app.sessionState.history = nav.history;
     };
 
-    
+    //On resume this handler calls the next() function.
+    function resumingHandler() {
+        Home.next();
+      
+    };
+
     app.start();
 })();

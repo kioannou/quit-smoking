@@ -8,6 +8,8 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
+
+            //If the values of Settings.js are defined the values are preserved
             var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
             var savedDay = roamingSettings.values["savedDay"];
             var savedMonth = roamingSettings.values["savedMonth"];
@@ -30,7 +32,7 @@
 
             }
             
-          
+          //Registering the event handler of Calculate button
             WinJS.Utilities.query("a").listen("click", newValues, false);
         },
 
@@ -89,19 +91,6 @@
             alert("The how many input is empty");
         }
         else {
-            var flag = true;
-            var settingsExposer = {
-                userDay: userDay,
-                userMonth: userMonth,
-                userYear: userYear,
-                costOfAPacket: costOfAPacket,
-                howMany: howMany,
-                flag: flag
-
-
-            };
-
-            WinJS.Namespace.define("Settings", settingsExposer);
 
             //Using the Application Data object for the roamingSettings property to save the app data
             var appData = Windows.Storage.ApplicationData.current;
