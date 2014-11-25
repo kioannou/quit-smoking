@@ -28,11 +28,11 @@
             if (typeof Home !== "undefined") {
                 if (app.sessionState.previousExecutionState === 1) {
                     WinJS.Promise.timeout(1300).then(function () {
-                        Home.next();
+                        Home.total();
                     });
                 }
                 else {
-                    Home.next();
+                    Home.total();
                 }
             };
 
@@ -68,7 +68,7 @@
 
     //On resume this handler calls the next() function.
     function resumingHandler() {
-        Home.next();
+        Home.total();
       
     };
 

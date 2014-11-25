@@ -1,6 +1,7 @@
 ﻿.homepage section[role=main] {
     margin-left: 24px;
     margin-right: 24px;
+    
 }
 
 .fragment section[role=main] {
@@ -14,9 +15,13 @@
 }
 
 
-
+/*FlipView in Start*/
 #motivationFlipView {
     width: 360px;
     height: 230px;
     border: solid 1px white;
 }
+
+
+
+
