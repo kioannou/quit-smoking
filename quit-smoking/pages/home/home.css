@@ -1,27 +1,97 @@
 ﻿.homepage section[role=main] {
     margin-left: 24px;
     margin-right: 24px;
-    
 }
 
 .fragment section[role=main] {
-	width: calc(100% - 48px)
+	width: calc(100% - 48px);
+    
+    
 }
 
 .fragment header[role=banner] .titlearea {
     -ms-grid-column: 3;
     margin-top: 37px;
     margin-left: -96px;
+        
+
+}
+/*Paragraphs*/
+p {
+    font-size:x-large;
+    font-family:'Segoe UI';
+    text-align:center;
 }
 
 
-/*FlipView in Start*/
+/*Settings BUTTON*/
+#settings {
+    font-size:x-large;
+    font-family:'Segoe UI';
+   
+}
+
+/*******OUTPUTS**********/
+
+/*START*/
+/*Days*/
+#days {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    text-align:center;
+}
+
+/*Not smoked*/
+#not {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    text-align:center;
+
+}
+
+/*Life saved format*/
+#lifeForm {
+      
+}
+
+/*Life saved OUTPUTS*/
+.lifeNum {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    font-weight:100;
+    text-align:center;
+}
+
+    .lifeNum:first-child {
+        font-weight:900;
+    }
+/*MONEY*/
+#money {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    font-weight:900;
+    color:lightgreen;
+    text-align:center;
+}
+
+#perMonth {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    color:lightgreen;
+    text-align:center;
+}
+
+#inAYear {
+    font-family:'Segoe WP SemiLight';
+    font-size:x-large;
+    color:lightgreen;
+    text-align:center;
+}
+
+/*MONEY FLIPVIEW*/
 #motivationFlipView {
     width: 360px;
-    height: 230px;
+    height: 190px;
     border: solid 1px white;
 }
-
-
-
 

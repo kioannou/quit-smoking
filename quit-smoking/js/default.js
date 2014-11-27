@@ -17,22 +17,26 @@
 
         //Preserved this code because in line 44 halndles the "Splash screen" promise.
         if (args.detail.kind === activation.ActivationKind.launch) {
-            
+
 
             //Application saves the previous execution state.
             WinJS.Application.sessionState.previousExecutionState =
                 args.detail.previousExecutionState;
 
             //Checks if the application relaunched while already running. 
-            //If so it delays 1300 ms the call of next() function for DOM to finish loading.
+            //If so it delays 2000 ms the call of next() function for DOM to finish loading.
             if (typeof Home !== "undefined") {
                 if (app.sessionState.previousExecutionState === 1) {
-                    WinJS.Promise.timeout(1300).then(function () {
+                    WinJS.Promise.timeout(1000).then(function () {
                         Home.total();
                     });
+
                 }
                 else {
-                    Home.total();
+                    WinJS.Promise.timeout(1000).then(function () {
+                        Home.total();
+                    });
+
                 }
             };
 
@@ -53,7 +57,7 @@
 
             args.setPromise(p);
 
-           
+
         }
 
     });
@@ -69,7 +73,7 @@
     //On resume this handler calls the next() function.
     function resumingHandler() {
         Home.total();
-      
+
     };
 
     app.start();

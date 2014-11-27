@@ -7,85 +7,85 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>9b729b80-ef1c-439d-a537-5e1678708984</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bld\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.css">
       <PackagePath>css\ui-themed.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.theme-dark.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.theme-dark.css">
       <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.theme-light.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.theme-light.css">
       <PackagePath>css\ui-themed.theme-light.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.css">
       <PackagePath>pages\settings\settings.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\Square150x150Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\Square150x150Logo.scale-240.png">
       <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\Square44x44Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\Square44x44Logo.scale-240.png">
       <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\Wide310x150Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\Wide310x150Logo.scale-240.png">
       <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\Square71x71Logo.scale-240.png">
       <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\SplashScreen.scale-240.png">
       <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\images\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\images\StoreLogo.scale-240.png">
       <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\healthData.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\js\healthData.js">
       <PackagePath>js\healthData.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\motivationData.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\js\motivationData.js">
       <PackagePath>js\motivationData.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.js">
       <PackagePath>pages\settings\settings.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\default.html">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.html">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.html">
       <PackagePath>pages\settings\settings.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

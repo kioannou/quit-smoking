@@ -31,9 +31,9 @@
                 document.getElementById("many").value = howMany;
 
             }
-            
-          //Registering the event handler of Calculate button
-            WinJS.Utilities.query("a").listen("click", this.newValues.bind(this), false);
+
+            //Registering the event handler of Calculate button
+            WinJS.Utilities.query("#calculate").listen("click", this.newValues.bind(this), false);
         },
 
         unload: function () {
@@ -46,7 +46,7 @@
             // TODO: Respond to changes in layout.
         },
 
-        
+
         //Alert function
         alert: function (message) {
             var msgBox = new Windows.UI.Popups.MessageDialog(message);
@@ -109,7 +109,7 @@
             else {
 
 
-                //Using the Application Data object for the roamingSettings property to save the app data
+                //Using the Application Data object for the roamingSettings property to save the app data.
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
 
@@ -119,11 +119,13 @@
                 roamingSettings.values["SavedCost"] = costOfAPacket;
                 roamingSettings.values["savedHowMany"] = howMany;
 
-                //Navigation to Home.html after all calculations are done
+                //Navigation to Home.html after all calculations are done.
 
-                eventInfo.preventDefault();
-                var link = eventInfo.target;
-                WinJS.Navigation.navigate(link.href);
+                //eventInfo.preventDefault();
+                //var link = eventInfo.target;
+                //WinJS.Navigation.navigate(link.href);
+
+                WinJS.Navigation.navigate("pages/home/home.html");
 
 
             }

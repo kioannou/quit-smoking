@@ -1,6 +1,6 @@
 ﻿.settings section {
 	margin: auto 120px;
-    font-size:large;
+    font-size:x-large;
     font-family:'Segoe UI';
 }
 
@@ -32,28 +32,55 @@
 		-ms-grid-row: 2;
 		height: 100%;
 	}
-
-
+/*COST INPUT and HOW MANY INPUT*/
 #cost {
     width:inherit;
-    height:30px;
+    height:37px;
+    border:0px;
+    background: #E8E8F7 ;
+    font-family:'Segoe UI';
+    font-size:large;
 }
+
 
 #many {
     width:inherit;
-    height:30px;
+    height:37px;
+    border:0px;
+    background: #E8E8F7 ;
+    font-family:'Segoe UI';
+    font-size:large;
 }
 
+/*DIV that holds the DATEPICKER*/
+#date {
+   
+}
+
+/*The DAY / MONTH / YEAR select*/
 #day {
-    width:37px;
+    width:auto;
+    font-size:xx-large;
+    border-color:#E8E8F7;
 }
 
 #month {
-    width:100px;
+    width:auto;
+    font-size:xx-large;
+    border-color:#E8E8F7;
 }
 
 #year {
-    width:67px;
+    width:auto;
+    font-size:xx-large;
+    border-color:#E8E8F7;
 }
 
 
+/*CALCULATE BUTTON*/
+#calculate {
+   
+    font-size:x-large;
+    font-family:'Segoe UI';
+    
+}

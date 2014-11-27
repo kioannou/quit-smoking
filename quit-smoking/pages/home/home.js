@@ -9,13 +9,16 @@
             // TODO: Initialize the page here.
 
             //Registering the event handler for navigation to Settings.html.
-            WinJS.Utilities.query("a").listen("click", this.navigateToSettings, false);
+            document.querySelector("#settings").onclick = function (args) {
+                WinJS.Navigation.navigate("pages/settings/settings.html");
+            };
+
 
             //Defining the Home namespace and exposing the next() function.
             WinJS.Namespace.define("Home", {
                 total: this.total
             });
-            
+
             //Calls total function after inputs and navigation here from Settings.js
             this.total();
 
@@ -25,16 +28,37 @@
             if (check === "--") {
                 this.alert("Go to Settings for configuration");
             };
-           
+
+
+            //Preservation for aesthetic reasons.
+            var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+            var preDays = roamingSettings.values["preDays"];
+            var preNot = roamingSettings.values["preNot"];
+            var preMoney = roamingSettings.values["preMoney"];
+            var preMonth = roamingSettings.values["preMonth"];
+            var preYear = roamingSettings.values["preYear"];
+
+            if (preDays && preMonth && preYear && preMoney && preNot) {
+
+                document.querySelector("#days").innerHTML = preDays;
+                document.querySelector("#not").innerHTML = preNot;
+                document.querySelector("#money").innerHTML = preMoney.toFixed(1);
+                document.querySelector("#perMonth").innerHTML = preMonth.toFixed(1);
+                document.querySelector("#inAYear").innerHTML = preYear.toFixed(1);
+
+            }
+
+
+
         },
 
         //Function to navigate to Settings page.
-        navigateToSettings : function (eventInfo) {
-            eventInfo.preventDefault();
-            var link = eventInfo.target;
-            WinJS.Navigation.navigate(link.href);
-        },
-       
+        //navigateToSettings: function (eventInfo) {
+        //    eventInfo.preventDefault();
+        //    var link = eventInfo.target;
+        //    WinJS.Navigation.navigate(link.href);
+        //},
+
         //Function for Alert message.
         alert: function (message) {
             var msgBox = new Windows.UI.Popups.MessageDialog(message);
@@ -43,6 +67,8 @@
         // total function practically is called after the user insert new inputs.
         total: function () {
 
+            //Start
+            //Getting the app data that stored in Settings page.
             var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
             var savedDay = roamingSettings.values["savedDay"];
             var savedMonth = roamingSettings.values["savedMonth"];
@@ -61,45 +87,71 @@
                 var daysDiff = Math.abs(todayDay - savedDay);
                 var monthsDiff = Math.abs(todayMonth - savedMonth) * 30;
                 var yearsDiff = Math.abs(todayYear - savedYear) * 365;
-                var days = daysDiff + monthsDiff + yearsDiff;
+                var days = daysDiff + monthsDiff + yearsDiff + 1; //+1 in case of the user choose the same day and days variable equals 0.
 
                 var cigarettesNotSmoked = days * savedHowMany;
+
+                //Formatting the life saved output.
                 var lifeSaved = cigarettesNotSmoked * 11;
                 var rest = lifeSaved;
 
-                var savedYears = rest / 525960;
-                if (savedYears >= 1) {
+                var lifeYears = rest / 525960;
+                if (lifeYears >= 1) {
                     rest = rest %= 525960;
-                    document.getElementById("lifeYears").innerHTML = savedYears.toFixed(0) + " year(s)";
-                }
+                    document.querySelector("#lifeYears").innerHTML = lifeYears.toFixed(0) + " year(s)";
+                };
 
-                var savedMonths = rest / 43830;
-                if (savedMonths >= 1) {
-                    rest = rest %= 3830;
-                    document.getElementById("lifeMonths").innerHTML = savedMonths.toFixed(0) + " month(s)";
-                }
+                var lifeMonths = rest / 43830;
+                if (lifeMonths >= 1) {
+                    rest = rest %= 43830;
+                    document.querySelector("#lifeMonths").innerHTML = lifeMonths.toFixed(0) + " month(s)";
+                };
 
-                var savedDays = rest / 1440;
-                if (savedDays >= 1) {
-                    document.getElementById("lifeDays").innerHTML = savedDays.toFixed(0) + " day(s)";
-                }
+                var lifeDays = rest / 1440;
+                if (lifeDays >= 1) {
+                    rest = rest %= 1440;
+                    document.querySelector("#lifeDays").innerHTML = lifeDays.toFixed(0) + " day(s)";
+                };
 
+                var hours = rest / 60;
+                if (hours >= 1) {
+                    rest = rest %= 60;
+                    document.querySelector("#hours").innerHTML = hours.toFixed(0) + " hour(s)";
+                };
 
+                var min = rest
+                if (min >= 1) {
+                    document.querySelector("#min").innerHTML = min.toFixed(0) + " minute(s)";
+                };
+
+                //Calculation of Pivot-Money outputs.
                 var moneySaved = cigarettesNotSmoked * (savedCost / 20);
                 var moneyMonth = (savedCost / 20) * (savedHowMany * 30);
                 var moneyYear = moneyMonth * 12;
 
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("not").innerHTML = cigarettesNotSmoked;
-                document.getElementById("money").innerHTML = moneySaved;
-                document.getElementById("perMonth").innerHTML = moneyMonth;
-                document.getElementById("inAYear").innerHTML = moneyYear;
+
+                //Passing all the values to outputs.
+                document.querySelector("#days").innerHTML = days;
+                document.querySelector("#not").innerHTML = cigarettesNotSmoked;
+                document.querySelector("#money").innerHTML = moneySaved.toFixed(1);
+                document.querySelector("#perMonth").innerHTML = moneyMonth.toFixed(1);
+                document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1);
 
 
+                //If there is new calculation preserves the old values until calculation completes.
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+
+                roamingSettings.values["preDays"] = days;
+                roamingSettings.values["preNot"] = cigarettesNotSmoked;
+                roamingSettings.values["preMoney"] = moneySaved;
+                roamingSettings.values["preMonth"] = moneyMonth;
+                roamingSettings.values["preYear"] = moneyYear;
 
             }
+
         }
 
     })
 
- })();
+})();
