@@ -16,6 +16,9 @@ js\navigator.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+pages\motivation\motivation.css
+pages\motivation\motivation.html
+pages\motivation\motivation.js
 pages\settings\settings.css
 pages\settings\settings.html
 pages\settings\settings.js

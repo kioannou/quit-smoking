@@ -9,10 +9,7 @@
             // TODO: Initialize the page here.
 
             //Registering the event handler for navigation to Settings.html.
-            document.querySelector("#settings").onclick = function (args) {
-                WinJS.Navigation.navigate("pages/settings/settings.html");
-            };
-
+            WinJS.Utilities.query("a").listen("click", this.navigateToSettings, false);
 
             //Defining the Home namespace and exposing the next() function.
             WinJS.Namespace.define("Home", {
@@ -31,33 +28,34 @@
 
 
             //Preservation for aesthetic reasons.
-            var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
-            var preDays = roamingSettings.values["preDays"];
-            var preNot = roamingSettings.values["preNot"];
-            var preMoney = roamingSettings.values["preMoney"];
-            var preMonth = roamingSettings.values["preMonth"];
-            var preYear = roamingSettings.values["preYear"];
+            //var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+            //var preDays = roamingSettings.values["preDays"];
+            //var preNot = roamingSettings.values["preNot"];
+            //var preMoney = roamingSettings.values["preMoney"];
+            //var preMonth = roamingSettings.values["preMonth"];
+            //var preYear = roamingSettings.values["preYear"];
+            //var currency = roamingSettings.values["savedCurrency"];
+            
+            //if (preDays && preMonth && preYear && preMoney && preNot) {
 
-            if (preDays && preMonth && preYear && preMoney && preNot) {
+            //    document.querySelector("#days").innerHTML = preDays;
+            //    document.querySelector("#not").innerHTML = preNot;
+            //    document.querySelector("#money").innerHTML = preMoney.toFixed(1) + " " + currency;
+            //    document.querySelector("#perMonth").innerHTML = preMonth.toFixed(1) + " " + currency;
+            //    document.querySelector("#inAYear").innerHTML = preYear.toFixed(1) + " " + currency;
 
-                document.querySelector("#days").innerHTML = preDays;
-                document.querySelector("#not").innerHTML = preNot;
-                document.querySelector("#money").innerHTML = preMoney.toFixed(1);
-                document.querySelector("#perMonth").innerHTML = preMonth.toFixed(1);
-                document.querySelector("#inAYear").innerHTML = preYear.toFixed(1);
-
-            }
+            //}
 
 
 
         },
 
         //Function to navigate to Settings page.
-        //navigateToSettings: function (eventInfo) {
-        //    eventInfo.preventDefault();
-        //    var link = eventInfo.target;
-        //    WinJS.Navigation.navigate(link.href);
-        //},
+        navigateToSettings: function (eventInfo) {
+            eventInfo.preventDefault();
+            var link = eventInfo.target;
+            WinJS.Navigation.navigate(link.href);
+        },
 
         //Function for Alert message.
         alert: function (message) {
@@ -75,6 +73,7 @@
             var savedYear = roamingSettings.values["savedYear"];
             var savedCost = roamingSettings.values["savedCost"];
             var savedHowMany = roamingSettings.values["savedHowMany"];
+            var currency = roamingSettings.values["savedCurrency"];
 
             if (savedDay && savedMonth && savedYear && savedCost && savedHowMany) {
 
@@ -133,11 +132,11 @@
                 //Passing all the values to outputs.
                 document.querySelector("#days").innerHTML = days;
                 document.querySelector("#not").innerHTML = cigarettesNotSmoked;
-                document.querySelector("#money").innerHTML = moneySaved.toFixed(1);
-                document.querySelector("#perMonth").innerHTML = moneyMonth.toFixed(1);
-                document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1);
+                document.querySelector("#money").innerHTML = moneySaved.toFixed(1) + " " + currency;
+                document.querySelector("#perMonth").innerHTML = moneyMonth.toFixed(1) + " " + currency;
+                document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1) + " " + currency;
 
-
+                
                 //If there is new calculation preserves the old values until calculation completes.
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;

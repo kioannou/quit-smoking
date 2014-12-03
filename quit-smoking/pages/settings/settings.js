@@ -16,6 +16,9 @@
             var savedYear = roamingSettings.values["savedYear"];
             var savedCost = roamingSettings.values["savedCost"];
             var savedHowMany = roamingSettings.values["savedHowMany"];
+            var currency = roamingSettings.values["savedCurrency"];
+
+            document.getElementById("currency").value = currency;
 
             if (savedDay && savedMonth && savedYear && savedCost && savedHowMany) {
                 var userDay = savedDay;
@@ -28,12 +31,17 @@
                 document.getElementById("month").value = userMonth;
                 document.getElementById("year").value = userYear;
                 document.getElementById("cost").value = costOfAPacket;
-                document.getElementById("many").value = howMany;
-
+                document.getElementById("slider").value = howMany;
+                document.getElementById("out").innerHTML = howMany;
+               
             }
 
-            //Registering the event handler of Calculate button
+            //Registering the event handler of Calculate button.
             WinJS.Utilities.query("#calculate").listen("click", this.newValues.bind(this), false);
+
+            //Input range for how many cigarettes the user used to smoke.
+            var slider = document.getElementById("slider");
+            slider.addEventListener("change", this.rangeChanged, false);
         },
 
         unload: function () {
@@ -47,12 +55,17 @@
         },
 
 
-        //Alert function
+        //Alert function.
         alert: function (message) {
             var msgBox = new Windows.UI.Popups.MessageDialog(message);
             msgBox.showAsync();
         },
 
+        //Event for changing the valur of the slider.
+        rangeChanged: function (eventInfo) {
+            var val = document.getElementById("slider").value;
+            document.getElementById("out").innerHTML = val;
+        },
 
         //Navigation to Home.js
         newValues: function (eventInfo) {
@@ -60,39 +73,22 @@
             var userMonth = document.getElementById("month").value;
             var userYear = document.getElementById("year").value;
             var costOfAPacket = document.getElementById("cost").value;
-            var howMany = document.getElementById("many").value;
-
+            var howMany = document.getElementById("slider").value;
+            var currency = document.getElementById("currency").value;
 
             var today = new Date();
             var year = today.getFullYear();
             var month = today.getMonth() + 1;//The month start from 0 so we add +1
             var day = today.getDate();
-
-
-
-            if (isNaN(costOfAPacket) && isNaN(howMany)) {
-                eventInfo.preventDefault();
-                this.alert("You have to input a NUMBER in the Cost of a packet and How many cigarettes per day fields!");
-            }
-            else if (isNaN(costOfAPacket)) {
+           
+            if (isNaN(costOfAPacket)) {
                 eventInfo.preventDefault();
                 this.alert("You have to input a NUMBER in the Cost of a packet field!");
             }
-            else if (isNaN(howMany)) {
-                eventInfo.preventDefault();
-                this.alert("You have to input a NUMBER in How many cigarettes per day field!");
-            }
-            else if (costOfAPacket == "" && howMany == "") {
-                eventInfo.preventDefault();
-                this.alert("You have to put numbers in the following inputs");
-            }
+           
             else if (costOfAPacket == "") {
                 eventInfo.preventDefault();
                 this.alert("The cost input is empty");
-            }
-            else if (howMany == "") {
-                eventInfo.preventDefault();
-                this.alert("The how many input is empty");
             }
             else if (userYear > year) {
                 eventInfo.preventDefault();
@@ -116,9 +112,9 @@
                 roamingSettings.values["savedDay"] = userDay;
                 roamingSettings.values["savedMonth"] = userMonth;
                 roamingSettings.values["savedYear"] = userYear;
-                roamingSettings.values["SavedCost"] = costOfAPacket;
+                roamingSettings.values["savedCost"] = costOfAPacket;
                 roamingSettings.values["savedHowMany"] = howMany;
-
+                roamingSettings.values["savedCurrency"] = currency;
                 //Navigation to Home.html after all calculations are done.
 
                 //eventInfo.preventDefault();

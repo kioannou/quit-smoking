@@ -1,7 +1,6 @@
 ﻿.settings section {
 	margin: auto 120px;
-    font-size:x-large;
-    font-family:'Segoe UI';
+   
 }
 
 .phone .settings .page-section {
@@ -10,77 +9,165 @@
 
 .phone .settings .page-header .titlearea {
 	-ms-grid-column: 1;
-	margin-top: 37px;
+	margin-top: 17px;
 	margin-left: 24px;
-	font-size: 28pt;
+	font-size: 330%;
+    font-family:'Segoe WP';
+    font-weight:100;
 	width: calc(100vw - 20px);
-}
-
-.phone .settings .back-button {
-	display: none;
+    
 }
 
 .fragment {
-	-ms-grid-columns: 1fr;
-	-ms-grid-rows: 128px 1fr;
-	display: -ms-grid;
-	height: 100%;
+	height:inherit;
 	width: 100%;
+    margin-right:24px;
+    overflow-y:auto;
+    overflow-x:hidden;
 }
 
 	.fragment section[role=main] {
-		-ms-grid-row: 2;
-		height: 100%;
+        width: calc(100% - 24px);
+		height:110%;
+        width: calc(100% - 48px);
+       
 	}
-/*COST INPUT and HOW MANY INPUT*/
-#cost {
-    width:inherit;
-    height:37px;
-    border:0px;
-    background: #E8E8F7 ;
-    font-family:'Segoe UI';
-    font-size:large;
+
+/*The DAY / MONTH / YEAR SELECT*/
+#r1 {
+    color:gray;
+    height:auto;
+    margin-top:20px;
+    font-size:100%
+}
+.r {
+
+    color:gray;
+    height:auto;
+    margin-top:3px;
+    font-size:100%
+
 }
 
+#dateP {
 
-#many {
-    width:inherit;
-    height:37px;
-    border:0px;
-    background: #E8E8F7 ;
-    font-family:'Segoe UI';
-    font-size:large;
+    font-size:150%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-align:left;
+
 }
 
-/*DIV that holds the DATEPICKER*/
-#date {
-   
-}
-
-/*The DAY / MONTH / YEAR select*/
 #day {
-    width:auto;
-    font-size:xx-large;
-    border-color:#E8E8F7;
+    width: inherit;
+    font-size: 170%;
+    margin-top:7px;
+  
 }
 
 #month {
-    width:auto;
-    font-size:xx-large;
-    border-color:#E8E8F7;
+    width:inherit;
+    font-size:170%;
+    margin-top:7px;
 }
 
 #year {
-    width:auto;
-    font-size:xx-large;
-    border-color:#E8E8F7;
+    width:inherit;
+    font-size:170%;
+    margin-top:7px;
 }
+
+/*COST INPUT */
+#costP {
+    font-size:150%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-align:left;
+    margin-top:17px;
+
+}
+
+#cost {
+    width:inherit;
+    height:7%;
+    border:none;
+    background-color:#E8E8F7;
+    font-family:'Segoe WP';
+    font-size:200%;
+    font-weight:300;
+    margin-top:8px;
+
+}
+
+/*CURRENCY SELECT*/
+#currencyP {
+    font-size:150%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-align:left;
+    margin-top:27px;
+
+}
+
+#currency {
+    width:inherit;
+    font-family:'Segoe WP';
+    font-size:170%;
+    font-weight:200;
+    margin-top:8px;
+
+}
+
+/*HOW MANY CIG SLIDER*/
+#howmanyP {
+    font-size:150%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-align:left;
+    margin-top:10px;
+
+}
+
+#numberP {
+   font-size:130%;
+   font-family:'Segoe WP';
+   font-weight:300;
+   text-align:left;
+   margin-top:6px;
+
+}
+
+#out {
+    font-family:'Segoe WP';
+    font-size:130%;
+    font-weight:500;
+    float:right;
+    margin-right:47px;
+
+}
+
+#slider {
+   width:inherit;
+   height:auto;
+}
+
 
 
 /*CALCULATE BUTTON*/
+#calculateDiv {
+    height:100px;
+}
+
 #calculate {
    
-    font-size:x-large;
-    font-family:'Segoe UI';
-    
+    font-size:200%;
+    font-weight:200;
+    font-family:'Segoe WP';
+    float:right;
+    margin-bottom:20px; 
+    margin-right:40px; 
+
 }
+
+
+

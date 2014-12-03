@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="9b729b80-ef1c-439d-a537-5e1678708984" Version="1.0.0.5" Publisher="CN=Kostas Ioannou" ProcessorArchitecture="neutral" />
+  <Identity Name="9b729b80-ef1c-439d-a537-5e1678708984" Version="1.0.0.6" Publisher="CN=Kostas Ioannou" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="9b729b80-ef1c-439d-a537-5e1678708984" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>quit-smoking</DisplayName>

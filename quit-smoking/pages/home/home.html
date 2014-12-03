@@ -12,7 +12,7 @@
     <link href="/pages/home/home.css" rel="stylesheet" />
     <script src="/pages/home/home.js"></script>
 
-    <!--Add motivation FlipView reference-->
+    <!--Add motivation ListView reference-->
     <script src="../../js/motivationData.js"></script>
     <!--Add health ListView reference-->
     <script src="../../js/healthData.js"></script>
@@ -23,50 +23,51 @@
     <div data-win-control="WinJS.UI.Pivot" id="pivot">
         <!----------------------------------------------------------------------FIRST PIVOT ITEM START-------------------------------------------->
         <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Start'}">
-            <!--<a id="sett" href="../settings/settings.html"></a>-->
-            <button id="settings">Settings</button>
-            <p>Days without smoking</p>
+            <p class="paragraph">Days without smoking</p>
             <div id="days">--</div>
-            <p>Cigarettes you have not smoked</p>
+            <p class="paragraph">Cigarettes you have not smoked</p>
             <div id="not">--</div>
-            <p>Life saved</p>
+            <p class="paragraph">Life saved </p>
             <div>
-                <span class="lifeNum" id="lifeYears"></span>
-                <span class="lifeNum" id="lifeMonths"></span>
-                <span class="lifeNum" id="lifeDays"></span>
-                <span class="lifeNum" id="hours"></span>
-                <span class="lifeNum" id="min"></span>
+                <span class="lifeOut" id="lifeYears"></span>
+                <span class="lifeOut" id="lifeMonths"></span>
+                <span class="lifeOut" id="lifeDays"></span>
+                <span class="lifeOut" id="hours"></span>
+                <span class="lifeOut" id="min"></span>
             </div>
-            
+            <a id="settings" href="../settings/settings.html">Settings</a>
         </div>
         <!----------------------------------------------------------------------SECOND PIVOT ITEM HEALTH-------------------------------------------->
         <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Health'}">
            
             <!--Define the template for the Health Page ListView-->
             <div id="healthTemplate" data-win-control="WinJS.Binding.Template">
-                <p data-win-bind="innerText : desc"></p><p data-win-bind="innerText: text"></p>
+                <p id="healthListDesc" data-win-bind="innerText : desc"></p><p id="healthListText" data-win-bind="innerText: text"></p>
             </div>
             <!--Define the Health page benefits ListView-->
-            <div id="healthListView" data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource:HealthData.healthList.dataSource, itemTemplate:healthTemplate}">
+            <div id="healthListView" data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource:HealthData.healthList.dataSource, itemTemplate:healthTemplate, layout:{type: WinJS.UI.ListLayout}},">
 
             </div>
         </div>
         <!----------------------------------------------------------------------THIRD PIVOT ITEM MONEY-------------------------------------------->
         <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Money'}">
             
-            <p>Money saved</p>
-            <div id="money">--</div>
-            <p>Money you save per month</p>
-            <div id="perMonth">--</div>
-            <p>Money you you will save in a year</p>
-            <div id="inAYear">--</div>
+            <p class="paragraph">Money you saved so far</p>
+            <div id="money">--<span id="currency"></span></div>
+            <p class="paragraph">Money you save every month</p>
+            <div id="perMonth">--<span id="currency"></span></div>
+            <p class="paragraph">Money you save in a year</p>
+            <div id="inAYear">--<span id="currency"></span></div>
             <br />
-            <!--Defining the tamplate for the FlipView-->
-            <div id="motivationTemplate" data-win-control="WinJS.Binding.Template">
-                <p data-win-bind="innerText: text"></p>
+        </div>
+        <!--------------------------------------------------------------------FOURTH PIVOT ITEM MOTIVATION---------------------------------------->
+        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Motivation'}">
+            <!-- template for motivation ListView -->
+            <div data-win-control="WinJS.Binding.Template" id="motivationTemplate">
+                <p data-win-bind="innerText:title"></p>
             </div>
-            <!--Start page FlipView-->
-            <div data-win-control="WinJS.UI.FlipView" id="motivationFlipView" data-win-options="{itemDataSource : MotivationData.motivationList.dataSource, itemTemplate:motivationTemplate}"></div>
+            <!--Motivation ListView-->
+            <div data-win-control="WinJS.UI.ListView" id="motivationListView" data-win-options="{itemDataSource:MotivationData.motivationList.dataSource, itemTemplate:motivationTemplate}"></div>
         </div>
     </div>
 </body>
