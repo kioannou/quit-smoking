@@ -61,7 +61,6 @@
     <Content Include="images\SplashScreen.scale-240.png" />
     <Content Include="images\StoreLogo.scale-240.png" />
     <Content Include="js\default.js" />
-    <Content Include="js\healthData.js" />
     <Content Include="js\motivationData.js" />
     <Content Include="js\navigator.js" />
     <Content Include="pages\home\home.css" />

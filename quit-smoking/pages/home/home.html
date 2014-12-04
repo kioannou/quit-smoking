@@ -14,20 +14,19 @@
 
     <!--Add motivation ListView reference-->
     <script src="../../js/motivationData.js"></script>
-    <!--Add health ListView reference-->
-    <script src="../../js/healthData.js"></script>
+    
 </head>
 <body>
     <!-- The content that will be loaded and displayed. -->
     <!--Defining the pivot control-->
     <div data-win-control="WinJS.UI.Pivot" id="pivot">
         <!----------------------------------------------------------------------FIRST PIVOT ITEM START-------------------------------------------->
-        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Start'}">
-            <p class="paragraph">Days without smoking</p>
+        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'start'}">
+            <p id="paragraphstart">Days you are smoke free</p>
             <div id="days">--</div>
             <p class="paragraph">Cigarettes you have not smoked</p>
             <div id="not">--</div>
-            <p class="paragraph">Life saved </p>
+            <p class="paragraph">How much life you have saved </p>
             <div>
                 <span class="lifeOut" id="lifeYears"></span>
                 <span class="lifeOut" id="lifeMonths"></span>
@@ -35,39 +34,124 @@
                 <span class="lifeOut" id="hours"></span>
                 <span class="lifeOut" id="min"></span>
             </div>
-            <a id="settings" href="../settings/settings.html">Settings</a>
+            <div id="settingsNote">For new configuration press the settings link below</div>
+            <a id="settings" href="../settings/settings.html">settings</a>
         </div>
         <!----------------------------------------------------------------------SECOND PIVOT ITEM HEALTH-------------------------------------------->
-        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Health'}">
-           
-            <!--Define the template for the Health Page ListView-->
-            <div id="healthTemplate" data-win-control="WinJS.Binding.Template">
-                <p id="healthListDesc" data-win-bind="innerText : desc"></p><p id="healthListText" data-win-bind="innerText: text"></p>
-            </div>
-            <!--Define the Health page benefits ListView-->
-            <div id="healthListView" data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource:HealthData.healthList.dataSource, itemTemplate:healthTemplate, layout:{type: WinJS.UI.ListLayout}},">
-
-            </div>
+        <!-- Shame on this part of code but it was necessery -->
+        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'health'}">
+           <div id="healthList">
+               <div id="twelve" >
+                   <h3>Within 12 hours</h3>
+                   <p class="healthListP">The carbon monoxide in your blood drops to normal</p>
+               </div>
+               <div id="oned" class="healthListDiv">
+                   <h3>After 1 day</h3>
+                   <p class="healthListP">Anxieties have peaked in intensity and within two weeks should return to near pre-cessation levels.</p>
+               </div>
+               <div id ="threed" class="healthListDiv">
+                   <h3>After 3 days</h3>
+                   <p class="healthListP">
+                       Your entire body will test 100% nicotine-free and over 90% of all nicotine metabolites
+                       (the chemicals it breaks down into) will now have passed from your body via your urine.
+                       Symptoms of chemical withdrawal have peaked in intensity, including restlessness.
+                       . Lung bronchial tubes leading to air sacs are beginning to relax in recovering smokers.
+                       Breathing is becoming easier and your lung's functional abilities are starting to increase.
+                   </p>
+               </div>
+               <div id="fived" class="healthListDiv">
+                   <h3>After 5 days</h3>
+                   <p class="healthListP">
+                       The average ex-smoker will encounter an average of three cue induced crave episodes per day.
+                       Although we may not be average and although serious cessation time distortion can make minutes feel like hours,
+                       it is unlikely that any single episode will last longer than 3 minutes.
+                   </p>
+               </div>
+               <div id="tend" class="healthListDiv">
+                   <h3>After 10 days</h3>
+                   <p class="healthListP">
+                       10 days - The average ex-user is down to encountering less than two crave episodes per day,
+                       each less than 3 minutes.
+                   </p>
+               </div>
+               <div id="fifteend" class="healthListDiv">
+                   <h3>After 15 days</h3>
+                   <p class="healthListP">
+                       Recovery has likely progressed to the point where your addiction is no longer doing the talking.
+                       Blood circulation in your gums and teeth are now similar to that of a non-user.
+                   </p>
+               </div>
+               <div id="twentyd" class="healthListDiv">
+                   <h3>After 20 days</h3>
+                   <p class="healthListP">
+                       Regions of the brain have now substantially down-regulated,
+                       and receptor binding has returned to levels seen in the brains of non-smokers.
+                   </p>
+               </div>
+               <div id="onem" class="healthListDiv">
+                   <h3>After 1 month</h3>
+                   <p class="healthListP">Your heart attack risk has started to drop. Your lung function is beginning to improve.</p>
+               </div>
+               <div id="threem" class="healthListDiv">
+                   <h3>After 3 months</h3>
+                   <p class="healthListP">
+                       Your circulation has substantially improved. Walking has become easier.
+                       Your chronic cough, if any, has likely disappeared
+                   </p>
+               </div>
+               <div id="sevenm" class="healthListDiv">
+                   <h3>After 7 months</h3>
+                   <p class="healthListP">
+                       Any smoking related sinus congestion,
+                       fatigue or shortness of breath has decreased.
+                       Cilia have regrown in your lungs, thereby increasing their ability to handle mucus,
+                       keep your lungs clean and reduce infections. Your body's overall energy has increased.
+                   </p>
+               </div>
+               <div id="oney" class="healthListDiv">
+                   <h3>After 1 year</h3>
+                   <p class="healthListP">
+                       Your excess risk of coronary heart disease,
+                       heart attack and stroke has dropped to less than half that of a smoker.
+                   </p>
+               </div>
+               <div id="fivey" class="healthListDiv">
+                   <h3>After 5 year</h3>
+                   <p class="healthListP">
+                       Your risk of a subarachnoid haemorrhage has declined to 59% of your risk while still smoking.
+                       If a female ex-smoker, your risk of developing diabetes is now that of a non-smoker.
+                   </p>
+               </div>
+               <div id="teny" class="healthListDiv">
+                   <h3>After 10 years</h3>
+                   <p class="healthListP">
+                       Your risk of being diagnosed with lung cancer is between 30% and 50% of that for a continuing smoker.
+                       Risk of death from lung cancer has declined by almost half if you were an average smoker (one pack per day).
+                       Risk of cancer of the mouth, throat, esophagus and pancreas have declined.
+                       Risk of developing diabetes for both men and women is now similar to that of a never-smoker.
+                   </p>
+               </div>
+           </div>
         </div>
         <!----------------------------------------------------------------------THIRD PIVOT ITEM MONEY-------------------------------------------->
-        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Money'}">
+        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'money'}">
             
             <p class="paragraph">Money you saved so far</p>
             <div id="money">--<span id="currency"></span></div>
             <p class="paragraph">Money you save every month</p>
             <div id="perMonth">--<span id="currency"></span></div>
-            <p class="paragraph">Money you save in a year</p>
+            <p class="paragraph">Money you save every year</p>
             <div id="inAYear">--<span id="currency"></span></div>
             <br />
         </div>
         <!--------------------------------------------------------------------FOURTH PIVOT ITEM MOTIVATION---------------------------------------->
-        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'Motivation'}">
+        <div data-win-control="WinJS.UI.PivotItem" data-win-options="{'header':'motivation'}">
             <!-- template for motivation ListView -->
             <div data-win-control="WinJS.Binding.Template" id="motivationTemplate">
-                <p data-win-bind="innerText:title"></p>
+                <p class="motivationP" data-win-bind="innerText:title"></p>
             </div>
             <!--Motivation ListView-->
-            <div data-win-control="WinJS.UI.ListView" id="motivationListView" data-win-options="{itemDataSource:MotivationData.motivationList.dataSource, itemTemplate:motivationTemplate}"></div>
+            <div data-win-control="WinJS.UI.ListView" id="motivationListView" data-win-options="{itemDataSource:MotivationData.motivationList.dataSource, itemTemplate:motivationTemplate,layout: {type: WinJS.UI.ListLayout}}"></div>
         </div>
     </div>
 </body>

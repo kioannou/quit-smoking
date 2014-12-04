@@ -64,9 +64,6 @@
     <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\healthData.js">
-      <PackagePath>js\healthData.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\js\motivationData.js">
       <PackagePath>js\motivationData.js</PackagePath>
     </AppxPackagedFile>

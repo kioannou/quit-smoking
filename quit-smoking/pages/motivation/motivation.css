@@ -24,9 +24,48 @@
 	display: -ms-grid;
 	height: 100%;
 	width: 100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
 }
 
 	.fragment section[role=main] {
 		-ms-grid-row: 2;
 		height: 100%;
 	}
+
+#titleone {
+    font-size:170%;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+#prologue {
+    font-size:130%;
+    font-weight:100;
+    margin-bottom:20px;
+}
+
+#titletwo {
+    font-size:170%;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+#maintext {
+    font-size:130%;
+    font-weight:100;
+    margin-bottom:20px;
+}
+
+#titlethree {
+    font-size:170%;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+#epilogue {
+    font-size:130%;
+    font-weight:100;
+    margin-bottom:10px;
+}

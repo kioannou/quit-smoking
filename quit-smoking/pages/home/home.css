@@ -11,22 +11,21 @@
 
 
 /*Paragraphs*/
-.paragraph {
+#paragraphstart {
     font-size:170%;
     font-family:'Segoe WP';
     font-weight:200;
     text-align:left;
 }
+.paragraph {
+    font-size:170%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-align:left;
+    margin-top:40px;
+}
 
 /*-------------------------------------------START PIVOT-----------------------------------------------*/
-/*Settings BUTTON*/
-#settings {
-    font-size:370%;
-    font-family:'Segoe WP';
-    font-weight:100;
-    text-decoration:none;
-    color:inherit;
-}
 
 /*******OUTPUTS**********/
 
@@ -34,7 +33,7 @@
 #days {
     font-family:'Segoe WP';
     font-size:210%;
-    font-weight:200;
+    font-weight:500;
     text-align:left;
 }
 
@@ -42,9 +41,9 @@
 #not {
     font-family:'Segoe WP';
     font-size:210%;
-    font-weight:200;
+    font-weight:500;
     text-align:left;
-
+    
 }
 
 
@@ -56,45 +55,76 @@
     text-align:left;
 }
 
+#settingsNote {
+    color:gray;
+    height:auto;
+    margin-top:60px;
+    font-size:100%;
+    margin-top:39px;
+}
+
+/*Settings BUTTON*/
+#settings {
+    font-size:370%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-decoration:none;
+    color:inherit;
+    margin-top:-27px;
+}
+
 
 /*--------------------------------------------HEALTH LIST PIVOT----------------------------------------*/
-/*HEATLTH LISTVIEW*/
-
-#healthListView {
+#healthList {
     height:auto;
-    margin-bottom:24px;
+    
     
 }
-#healthTemplate {
-  
+
+.healthListDiv {
+    margin-top:23px;
+    
 }
-#healthListDesc {
+
+h3 {
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.healthListP {
+    
+    margin-top:-5px;
+    margin-left:10px;
+    margin-right:10px;
     font-size:medium;
 }
 
-#healthListText {
-    font-size:small;
+.achieved {
+    background-color:green;
+    border-radius:6px;
+    margin-top:23px;
 }
 
 /*----------------------------------------------MONEY PIVOT--------------------------------------------*/
 #money {
     font-family:'Segoe WP';
     font-size:210%;
-    font-weight:300;
+    font-weight:400;
     text-align:left;
 }
 
 #perMonth {
     font-family:'Segoe WP';
     font-size:210%;
-    font-weight:200;
+    font-weight:400;
     text-align:left;
 }
 
 #inAYear {
     font-family:'Segoe WP';
     font-size:210%;
-    font-weight:200;
+    font-weight:400;
     text-align:left;
 }
 
@@ -103,3 +133,20 @@
 }
 
 /*-----------------------------------------------MOTIVATION PIVOT---------------------------------------*/
+
+#motivationListView {
+    height:auto;
+    width:inherit;
+    font-size:210%;
+    font-family:'Segoe WP';
+    font-weight:300;
+    
+   
+
+}
+
+.motivationP {
+    
+    height:auto;
+    border:1px dotted red;
+}

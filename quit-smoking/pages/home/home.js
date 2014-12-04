@@ -11,7 +11,7 @@
             //Registering the event handler for navigation to Settings.html.
             WinJS.Utilities.query("a").listen("click", this.navigateToSettings, false);
 
-            //Defining the Home namespace and exposing the next() function.
+            //Defining the Home namespace and exposing the total() function.
             WinJS.Namespace.define("Home", {
                 total: this.total
             });
@@ -26,6 +26,14 @@
                 this.alert("Go to Settings for configuration");
             };
 
+            //Registering event handler for clicking a motivation List item.
+            var list = document.getElementById("motivationListView");
+
+            list.itemDataSource = MotivationData.motivationList.dataSource;
+
+            list.addEventListener("iteminvoked", this.tapitem, false);
+
+            WinJS.UI.processAll();
 
             //Preservation for aesthetic reasons.
             //var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
@@ -47,6 +55,20 @@
             //}
 
 
+
+        },
+        //Event handler when a list item is clicked. The function gets all values associated with the clicked item and pass
+        //then to motivation.js when navigating
+        tapitem: function (args) {
+            var title = MotivationData.motivationList.getAt(args.detail.itemIndex).title;
+            var t1 = MotivationData.motivationList.getAt(args.detail.itemIndex).t1;
+            var pro = MotivationData.motivationList.getAt(args.detail.itemIndex).pro;
+            var t2 = MotivationData.motivationList.getAt(args.detail.itemIndex).t2;
+            var main = MotivationData.motivationList.getAt(args.detail.itemIndex).main;
+            var t3 = MotivationData.motivationList.getAt(args.detail.itemIndex).t3;
+            var epi = MotivationData.motivationList.getAt(args.detail.itemIndex).epi;
+
+            WinJS.Navigation.navigate("/pages/motivation/motivation.html", { title: title, t1: t1, pro: pro, t2: t2, main: main, t3: t3, epi: epi });
 
         },
 
@@ -136,7 +158,133 @@
                 document.querySelector("#perMonth").innerHTML = moneyMonth.toFixed(1) + " " + currency;
                 document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1) + " " + currency;
 
-                
+                //Health Achievements
+                //Shame on this part of code but it was necessery 
+                if (days >= 3652) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                    document.querySelector("#threem").setAttribute("class", "achieved");
+                    document.querySelector("#sevenm").setAttribute("class", "achieved");
+                    document.querySelector("#oney").setAttribute("class", "achieved");
+                    document.querySelector("#fivey").setAttribute("class", "achieved");
+                    document.querySelector("#teny").removeAttribute("class", "achieved");
+                }
+                else if(days<3652 && days>=1826){
+                    
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                    document.querySelector("#threem").setAttribute("class", "achieved");
+                    document.querySelector("#sevenm").setAttribute("class", "achieved");
+                    document.querySelector("#oney").setAttribute("class", "achieved");
+                    document.querySelector("#fivey").setAttribute("class", "achieved");
+                }
+                else if (days < 1826 && days >= 365) {
+                    
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                    document.querySelector("#threem").setAttribute("class", "achieved");
+                    document.querySelector("#sevenm").setAttribute("class", "achieved");
+                    document.querySelector("#oney").setAttribute("class", "achieved");
+                }
+                else if (days < 365 && days >= 213) {
+                   
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                    document.querySelector("#threem").setAttribute("class", "achieved");
+                    document.querySelector("#sevenm").setAttribute("class", "achieved");
+                }
+                else if (days < 213 && days >= 92) {
+                    
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                    document.querySelector("#threem").setAttribute("class", "achieved");
+                }
+                else if (days < 92 && days >= 32) {
+                    
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    document.querySelector("#onem").setAttribute("class", "achieved");
+                }
+                else if (days < 32 && days >= 21) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                    document.querySelector("#twentyd").setAttribute("class", "achieved");
+                    
+                }
+                else if (days < 21 && days >= 16) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                    document.querySelector("#fifteend").setAttribute("class", "achieved");
+                }
+                else if (days < 16 && days >= 11) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                    document.querySelector("#tend").setAttribute("class", "achieved");
+                }
+                else if (days < 11 && days >= 6) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                    document.querySelector("#fived").setAttribute("class", "achieved");
+                }
+                else if (days < 6 && days >= 4) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                    document.querySelector("#threed").setAttribute("class", "achieved");
+                }
+                else if (days < 4 && days >= 2) {
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                    document.querySelector("#oned").setAttribute("class", "achieved");
+                }
+                else if (days < 2 && days >= 1) {
+                    
+                    document.querySelector("#twelve").setAttribute("class", "achieved");
+                }
+
                 //If there is new calculation preserves the old values until calculation completes.
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;

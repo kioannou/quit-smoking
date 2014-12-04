@@ -8,6 +8,23 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
+            var title = options.title;
+            var t1 = options.t1;
+            var pro = options.pro;
+            var t2 = options.t2;
+            var main = options.main;
+            var t3 = options.t3;
+            var epi = options.epi;
+
+            document.getElementById("title").innerHTML = title;
+            document.getElementById("titleone").innerHTML = t1;
+            document.getElementById("prologue").innerHTML = pro;
+            document.getElementById("titletwo").innerHTML = t2;
+            document.getElementById("maintext").innerHTML = main;
+            document.getElementById("titlethree").innerHTML = t3;
+            document.getElementById("epilogue").innerHTML = epi;
+            
+
         },
 
         unload: function () {
@@ -19,6 +36,8 @@
 
             // TODO: Respond to changes in layout.
         }
+
+       
     });
 
   
