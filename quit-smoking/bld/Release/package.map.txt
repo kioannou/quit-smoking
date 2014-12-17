@@ -1,5 +1,5 @@
 [Files]
-"C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\AppxManifest.xml" "AppxManifest.xml"
+"C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Release\AppxManifest.xml" "AppxManifest.xml"
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\default.css" "css\default.css"
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.css" "css\ui-themed.css"
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\css\ui-themed.theme-dark.css" "css\ui-themed.theme-dark.css"
@@ -24,4 +24,4 @@
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\default.html" "default.html"
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\motivation\motivation.html" "pages\motivation\motivation.html"
 "C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\pages\settings\settings.html" "pages\settings\settings.html"
-"C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\resources.pri" "resources.pri"
+"C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Release\resources.pri" "resources.pri"

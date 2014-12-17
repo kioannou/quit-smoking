@@ -5,7 +5,7 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-
+            
             // TODO: Initialize the page here.
 
             //Registering the event handler for navigation to Settings.html.
@@ -33,26 +33,8 @@
 
             list.addEventListener("iteminvoked", this.tapitem, false);
 
-            WinJS.UI.processAll();
-
-            //Preservation for aesthetic reasons.
-            //var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
-            //var preDays = roamingSettings.values["preDays"];
-            //var preNot = roamingSettings.values["preNot"];
-            //var preMoney = roamingSettings.values["preMoney"];
-            //var preMonth = roamingSettings.values["preMonth"];
-            //var preYear = roamingSettings.values["preYear"];
-            //var currency = roamingSettings.values["savedCurrency"];
             
-            //if (preDays && preMonth && preYear && preMoney && preNot) {
-
-            //    document.querySelector("#days").innerHTML = preDays;
-            //    document.querySelector("#not").innerHTML = preNot;
-            //    document.querySelector("#money").innerHTML = preMoney.toFixed(1) + " " + currency;
-            //    document.querySelector("#perMonth").innerHTML = preMonth.toFixed(1) + " " + currency;
-            //    document.querySelector("#inAYear").innerHTML = preYear.toFixed(1) + " " + currency;
-
-            //}
+            WinJS.UI.processAll();
 
 
 
@@ -70,6 +52,7 @@
 
             WinJS.Navigation.navigate("/pages/motivation/motivation.html", { title: title, t1: t1, pro: pro, t2: t2, main: main, t3: t3, epi: epi });
 
+            
         },
 
         //Function to navigate to Settings page.
@@ -159,131 +142,16 @@
                 document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1) + " " + currency;
 
                 //Health Achievements
-                //Shame on this part of code but it was necessery 
-                if (days >= 3652) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                    document.querySelector("#threem").setAttribute("class", "achieved");
-                    document.querySelector("#sevenm").setAttribute("class", "achieved");
-                    document.querySelector("#oney").setAttribute("class", "achieved");
-                    document.querySelector("#fivey").setAttribute("class", "achieved");
-                    document.querySelector("#teny").removeAttribute("class", "achieved");
-                }
-                else if(days<3652 && days>=1826){
+                for (var i = 0; i < 12 ; i++) {
+                    var item = HealthData.healthList.getAt(i);
                     
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                    document.querySelector("#threem").setAttribute("class", "achieved");
-                    document.querySelector("#sevenm").setAttribute("class", "achieved");
-                    document.querySelector("#oney").setAttribute("class", "achieved");
-                    document.querySelector("#fivey").setAttribute("class", "achieved");
-                }
-                else if (days < 1826 && days >= 365) {
-                    
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                    document.querySelector("#threem").setAttribute("class", "achieved");
-                    document.querySelector("#sevenm").setAttribute("class", "achieved");
-                    document.querySelector("#oney").setAttribute("class", "achieved");
-                }
-                else if (days < 365 && days >= 213) {
-                   
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                    document.querySelector("#threem").setAttribute("class", "achieved");
-                    document.querySelector("#sevenm").setAttribute("class", "achieved");
-                }
-                else if (days < 213 && days >= 92) {
-                    
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                    document.querySelector("#threem").setAttribute("class", "achieved");
-                }
-                else if (days < 92 && days >= 32) {
-                    
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    document.querySelector("#onem").setAttribute("class", "achieved");
-                }
-                else if (days < 32 && days >= 21) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                    document.querySelector("#twentyd").setAttribute("class", "achieved");
-                    
-                }
-                else if (days < 21 && days >= 16) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                    document.querySelector("#fifteend").setAttribute("class", "achieved");
-                }
-                else if (days < 16 && days >= 11) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                    document.querySelector("#tend").setAttribute("class", "achieved");
-                }
-                else if (days < 11 && days >= 6) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                    document.querySelector("#fived").setAttribute("class", "achieved");
-                }
-                else if (days < 6 && days >= 4) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                    document.querySelector("#threed").setAttribute("class", "achieved");
-                }
-                else if (days < 4 && days >= 2) {
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                    document.querySelector("#oned").setAttribute("class", "achieved");
-                }
-                else if (days < 2 && days >= 1) {
-                    
-                    document.querySelector("#twelve").setAttribute("class", "achieved");
-                }
+                    if (item.value <= days) {
+                        item.seed = "ACHIEVED";
+                    } else {
+                        var indays = item.value - days;
+                        item.seed = "In " + indays + " days";
+                    }
+                };
 
                 //If there is new calculation preserves the old values until calculation completes.
                 var appData = Windows.Storage.ApplicationData.current;

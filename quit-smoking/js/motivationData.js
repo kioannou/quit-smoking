@@ -8,7 +8,7 @@
           t2: "How Is Smoking Related to Asthma?",
           main: "If you have asthma, an asthma attack can occur when something irritates your airways and \"triggers\" an attack. Your triggers might be different from other people’s triggers. Tobacco smoke is one of the most common asthma triggers. Tobacco smoke—including secondhand smoke—is unhealthy for everyone, especially people with asthma. Secondhand smoke contains more than 7,000 chemicals, including hundreds that are toxic and about 70 that can cause cancer.",
           t3: "How Can Asthma Attacks Be Prevented?",
-          epi: "If you or a family member has asthma, you can manage it with the help of your health care provider (for example, by taking your medicines exactly as your doctor tells you) and by avoiding triggers. Staying far away from tobacco smoke is one important way to avoid asthma attacks"
+          epi: "If you or a family member has asthma, you can manage it with the help of your health care provider (for example, by taking your medicines exactly as your doctor tells you) and by avoiding triggers. Staying far away from tobacco smoke is one important way to avoid asthma attacks."
       },
       {
           type: "item",
@@ -30,7 +30,7 @@
           main: "Poisons in cigarette smoke can weaken the body’s immune system, making it harder to kill cancer cells. When this happens, cancer cells keep growing without being stopped. •Poisons in tobacco smoke can damage or change a cell's DNA. DNA is the cell's \"instruction manual\" that controls a cell's normal growth and function. When DNA is damaged, a cell can begin growing out of control and create a cancer tumor."
       },
       {
-          type: "item", title: "Chronic Obstructive Pulmonary Disease (COPD)",
+          type: "item", title: "COPD",
           t1: "What Is COPD?",
           pro: "Chronic obstructive pulmonary disease (COPD) is a serious lung disease that gradually makes it harder and harder to breathe. COPD includes emphysema and chronic bronchitis. With COPD, less air flows through the airways—the tubes that carry air in and out of your lungs",
           t2: "How Is Smoking Related to COPD?",

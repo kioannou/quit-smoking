@@ -10,6 +10,7 @@ images\Square71x71Logo.scale-240.png
 images\StoreLogo.scale-240.png
 images\Wide310x150Logo.scale-240.png
 js\default.js
+js\healthData.js
 js\motivationData.js
 js\navigator.js
 pages\home\home.css

@@ -59,8 +59,9 @@
     color:gray;
     height:auto;
     margin-top:60px;
-    font-size:100%;
+    font-size:110%;
     margin-top:39px;
+    padding-left:3px;
 }
 
 /*Settings BUTTON*/
@@ -75,35 +76,33 @@
 
 
 /*--------------------------------------------HEALTH LIST PIVOT----------------------------------------*/
-#healthList {
+#healthListView {
+   height:100%;
+}
+
+#healthNote {
+    color:gray;
     height:auto;
-    
-    
+    font-size:130%;
+    padding-left:5px;
+
 }
 
-.healthListDiv {
-    margin-top:23px;
-    
+.afterTitle {
+    font-size:140%;
+    margin-top:3px;
 }
 
-h3 {
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
+.afterText {
+    font-size:110%;
+    height:80px;
 }
 
-.healthListP {
-    
-    margin-top:-5px;
-    margin-left:10px;
-    margin-right:10px;
+.seed {
     font-size:medium;
-}
-
-.achieved {
-    background-color:green;
-    border-radius:6px;
-    margin-top:23px;
+    font-weight:700;
+    color:Highlight;
+    margin-top:27px;
 }
 
 /*----------------------------------------------MONEY PIVOT--------------------------------------------*/
@@ -137,16 +136,22 @@ h3 {
 #motivationListView {
     height:auto;
     width:inherit;
-    font-size:210%;
+    font-size:220%;
     font-family:'Segoe WP';
     font-weight:300;
     
    
 
 }
-
-.motivationP {
-    
+#motivationNote {
+    color:gray;
     height:auto;
-    border:1px dotted red;
+    font-size:130%;
+    padding-top:-17px;
+    padding-bottom:14px;
+    padding-left:5px;
+
+}
+.motivationP {
+    margin-top:-11px;
 }
