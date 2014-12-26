@@ -1,0 +1,88 @@
+﻿.settings section {
+	margin: auto 120px;
+}
+
+.phone .settings .page-section {
+	margin: auto 24px;
+}
+
+.phone .settings .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .settings .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+
+#settingsDiv {
+    display:-ms-grid;
+    -ms-grid-columns: 1fr;
+   -ms-grid-row-span:5;
+}
+
+
+/*Date*/
+#dateHolder {
+    -ms-grid-row:1;
+}
+
+#dateText {
+}
+
+#datePick {
+}
+
+/*Cost*/
+#costHolder {
+    -ms-grid-row:2;
+}
+
+#costText {
+}
+
+#costInput {
+}
+
+/*Currency*/
+#currencyHolder {
+    -ms-grid-row:3;
+}
+
+#currencyText {
+}
+
+#currencySelect {
+}
+
+/*Many*/
+#manyHolder {
+    -ms-grid-row:4;
+}
+
+#manyText {
+}
+
+#manyInput {
+}
+
+/*Calculate Button*/
+#calculateButton {
+    -ms-grid-row:5;
+}

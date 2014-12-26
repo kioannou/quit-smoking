@@ -39,6 +39,8 @@
     <PackageDependency Name="Microsoft.Phone.WinJS.2.1" MinVersion="1.0.9651.0" />
   </Dependencies>
   <build:Metadata>
+    <build:Item Name="SharedGUID" Value="a6621128-bb3f-47b2-b8c0-e2374d35295e" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Express 2013 for Windows" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />

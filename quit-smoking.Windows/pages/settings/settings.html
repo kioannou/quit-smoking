@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>settings</title>
+
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <link href="settings.css" rel="stylesheet" />
+    <script src="settings.js"></script>
+</head>
+<body>
+    <div class="settings fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Settings</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="settingsDiv">
+                <div id="dateHolder">
+                    <div id="dateText">Select date</div>
+                    <div id="datePick" data-win-control="WinJS.UI.DatePicker"></div>
+                </div>
+                <div id="costHolder">
+                    <div id="costText">How much</div>
+                    <div><input id="costInput" placeholder="Enter cost"/></div>
+                </div>
+                <div id="currencyHolder">
+                    <div id="currencyText">Select currency</div>
+                    <div>
+                        <select id="currencySelect">
+                            <option class="currency" value="€">Euro €</option>
+                            <option class="currency" value="$">Dollar $</option>
+                            <option class="currency" value="£">Pound £</option>
+                            <option class="currency" value="Kr">Kroner Kr</option>
+                            <option class="currency" value="zł">Zloty zł</option>
+                            <option class="currency" value="руб">Ruble руб</option>
+                            <option class="currency" value="¥"> Yen ¥</option>
+                            <option class="currency" value="₩">Wan ₩</option>
+                            <option class="currency" value="R$">Real R$</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="manyHolder">
+                    <div id="manyText">How many</div>
+                    <div><input id="manyInput" type="range" max="100" min="1" value="10" /><div id="manyInputOut"></div></div>
+                </div>
+                <button id="calculateButton">Calculate</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

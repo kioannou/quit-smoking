@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-76G48AVRF30</Machine>
+    <WindowsUser>Kostas Ioannou</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a161d788-257b-43cc-8d3c-2b67e9ff65bd</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>B4774E3045993AB9D3C65FA2102A6A8702D8A577A417AB42D7B77CE4AC0BE5D7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a161d788-257b-43cc-8d3c-2b67e9ff65bd_1.0.0.0_neutral__yjbqw03f4wqkw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a161d788-257b-43cc-8d3c-2b67e9ff65bd_yjbqw03f4wqkw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a161d788-257b-43cc-8d3c-2b67e9ff65bd</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Kostas Ioannou</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-24T12:30:28.147</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2014-12-24T11:39:46.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2014-12-25T23:14:02.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.html">
+      <PackagePath>pages\settings\settings.html</PackagePath>
+      <Modified>2014-12-24T16:42:47.279</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T14:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T14:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T14:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T14:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2014-12-24T11:39:46.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2014-12-24T11:39:46.565</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2014-12-25T23:13:57.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.js">
+      <PackagePath>pages\settings\settings.js</PackagePath>
+      <Modified>2014-12-25T00:37:09.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2014-12-24T11:39:46.272</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2014-12-24T11:39:46.303</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.css">
+      <PackagePath>pages\settings\settings.css</PackagePath>
+      <Modified>2014-12-24T16:42:47.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-12-24T12:30:28.085</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
