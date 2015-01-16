@@ -33,6 +33,11 @@
 
             list.addEventListener("iteminvoked", this.tapitem, false);
 
+            //Registering the background task
+
+
+            initTask();
+
             
             WinJS.UI.processAll();
 
@@ -142,6 +147,7 @@
                 document.querySelector("#inAYear").innerHTML = moneyYear.toFixed(1) + " " + currency;
 
                 //Health Achievements
+
                 for (var i = 0; i < 12 ; i++) {
                     var item = HealthData.healthList.getAt(i);
                     
@@ -149,7 +155,7 @@
                         item.seed = "ACHIEVED";
                     } else {
                         var indays = item.value - days;
-                        item.seed = "In " + indays + " days";
+                        item.seed = "In " + indays + " day(s)";
                     }
                 };
 
@@ -168,5 +174,45 @@
         }
 
     })
+
+    var back = Windows.ApplicationModel.Background;
+
+    function isTaskRunning(name) {
+        var iter = back.BackgroundTaskRegistration.allTasks.first();
+        var hascur = iter.hasCurrent;
+        while (hascur) {
+            var cur = iter.current.value;
+            if (cur.name == name) {
+                return true;
+            }
+            hascur = iter.moveNext();
+        }
+        return false;
+    }
+
+    function registerTask(taskName, taskFileName, trigger) {
+        if (isTaskRunning(taskName)) {
+            return;
+        }
+        var builder = new back.BackgroundTaskBuilder();
+        builder.name = taskName;
+        builder.taskEntryPoint = taskFileName;
+        builder.setTrigger(trigger);
+
+        back.BackgroundExecutionManager.requestAccessAsync();
+        var backgroundTaskRegistration = builder.register();
+    }
+
+    function initTask() {
+        
+        var userCondition = new Windows.ApplicationModel.Background.SystemCondition(Windows.ApplicationModel.Background.SystemConditionType.userNotPresent);
+        
+        var hourlyTrigger = new Windows.ApplicationModel.Background.TimeTrigger(30, false);
+
+        registerTask("AppUpdater", "js\\backgroundtimer.js", hourlyTrigger);
+
+    }
+
+
 
 })();

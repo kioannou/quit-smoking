@@ -1,48 +1,44 @@
-﻿// For an introduction to the Navigation template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkId=232506
+﻿// For an introduction to the Blank template, see the following documentation:
+// http://go.microsoft.com/fwlink/?LinkId=232509
 (function () {
     "use strict";
 
-    var activation = Windows.ApplicationModel.Activation;
     var app = WinJS.Application;
+    var activation = Windows.ApplicationModel.Activation;
     var nav = WinJS.Navigation;
-    var sched = WinJS.Utilities.Scheduler;
-    var ui = WinJS.UI;
 
-    app.addEventListener("activated", function (args) {
+    app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
+                // Add your initialization code here.
             } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
+                // Restore app state here.
             }
 
-            nav.history = app.sessionState.history || {};
-            nav.history.current.initialPlaceholder = true;
+            var start = WinJS.UI.processAll().
+                then(function () {
+                    return nav.navigate("/pages/statistics/statistics.html");
+                });
 
-            // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
-            ui.disableAnimations();
-            var p = ui.processAll().then(function () {
-                return nav.navigate(nav.location || Application.navigator.home, nav.state);
-            }).then(function () {
-                return sched.requestDrain(sched.Priority.aboveNormal + 1);
-            }).then(function () {
-                ui.enableAnimations();
-            });
-
-            args.setPromise(p);
+            args.setPromise(start);
         }
-    });
+    };
 
     app.oncheckpoint = function (args) {
-        // TODO: This application is about to be suspended. Save any state
-        // that needs to persist across suspensions here. If you need to 
-        // complete an asynchronous operation before your application is 
-        // suspended, call args.setPromise().
-        app.sessionState.history = nav.history;
+        // Add app suspension code here.
     };
+
+    nav.onnavigated = function (evt) {
+        var contentHost =
+            document.body.querySelector("#contentHost"),
+            url = evt.detail.location;
+
+        // Remove existing content from the host element.
+        WinJS.Utilities.empty(contentHost);
+
+        // Display the new page in the content host.
+        WinJS.UI.Pages.render(url, contentHost);
+    }
 
     app.start();
 })();

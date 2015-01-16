@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.1" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" />
+  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.2" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" />
   <mp:PhoneIdentity PhoneProductId="233e9f1b-ccee-4c14-9c9f-87824e2638c0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Stop smoking now</DisplayName>
@@ -16,17 +16,25 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m3:VisualElements DisplayName="Stop smoking now!" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Application that helps you quit smoking" ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Stop smoking now!" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Windows phone application that helps you quit smoking." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
         <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="images\SplashScreen.png" />
+        <m3:SplashScreen Image="images\SplashScreen.png" BackgroundColor="indigo" />
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />
         </m3:InitialRotationPreference>
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\backgroundtimer.js">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>

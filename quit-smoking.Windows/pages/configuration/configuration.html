@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>configuration</title>
+
+    <link href="configuration.css" rel="stylesheet" />
+    <script src="configuration.js"></script>
+</head>
+<body>
+    <div class="configuration fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Configuration</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="configurationDiv">
+                <div id="dateHolder">
+                    <div id="dateText">Select the date you stopped smoking</div>
+                    <div id="datePick" data-win-control="WinJS.UI.DatePicker"></div>
+                </div>
+                <div id="chosenDiv">
+                   <div id="chosenText">Last selected date: <span id="chosenDate">Undefined</span></div>
+                </div>
+                <div id="costHolder">
+                    <div id="costText">How much a packet of cigarettes cost?</div>
+                    <div><input id="costInput" placeholder="Enter a value" /></div>
+                </div>
+                <div id="currencyHolder">
+                    <div id="currencyText">Select one of the available currencies</div>
+                    <div>
+                        <select id="currencySelect">
+                            <option class="currency" value="€">Euro €</option>
+                            <option class="currency" value="$">Dollar $</option>
+                            <option class="currency" value="£">Pound £</option>
+                            <option class="currency" value="Kr">Kroner Kr</option>
+                            <option class="currency" value="zł">Zloty zł</option>
+                            <option class="currency" value="руб">Ruble руб</option>
+                            <option class="currency" value="¥"> Yen ¥</option>
+                            <option class="currency" value="₩">Wan ₩</option>
+                            <option class="currency" value="R$">Real R$</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="manyHolder">
+                    <div id="manyText">How many cigarettes you used to smoke a day?</div>
+                    <div><input id="manyInput" type="range" max="100" min="1" value="10" /><span id="manyInputOut"></span></div>
+                </div>
+                <button id="calculateButton">Calculate</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

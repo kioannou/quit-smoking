@@ -1,0 +1,218 @@
+﻿.statistics section {
+	margin: 1px 50px;
+}
+
+.phone .statistics .page-section {
+	margin: auto 24px;
+}
+
+.phone .statistics .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .statistics .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+
+#statsDiv {
+    display:-ms-grid;
+    -ms-grid-column-span:2;
+    -ms-grid-row-span:7;
+    font-family:'Segoe UI';
+    text-align:center;
+   
+}
+
+#howDaysDiv {
+    -ms-grid-column:1;
+    -ms-grid-row:1;
+    
+    background-color:indigo;
+    margin-top:10px;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howDaysOut {
+    -ms-grid-column:1;
+    -ms-grid-row:2;
+    background-color:indigo;
+    font-weight:300;
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#howCigsDiv {
+    -ms-grid-column:1;
+    -ms-grid-row:3;
+    background-color:indigo;
+    margin-top: 40px;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howCigsOut {
+    -ms-grid-column:1;
+    -ms-grid-row:4;
+    background-color:indigo;
+    font-weight:300;
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#howLifeDiv {
+    -ms-grid-column:1;
+    -ms-grid-row:5;
+    background-color:indigo;
+    margin-top: 40px;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howLifeOut {
+    -ms-grid-column:1;
+    -ms-grid-row:6;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#howMoneyDiv {
+    -ms-grid-column:2;
+    -ms-grid-row:1;
+    margin-top:10px;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howMoneyOut {
+    -ms-grid-column:2;
+    -ms-grid-row:2;
+    margin-left: 40px;
+    background-color:indigo;
+
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#howMonthDiv {
+    -ms-grid-column:2;
+    -ms-grid-row:3;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howMonthOut {
+    -ms-grid-column:2;
+    -ms-grid-row:4;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:300;
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#howYearDiv {
+    -ms-grid-column:2;
+    -ms-grid-row:5;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#howYearOut {
+    -ms-grid-column:2;
+    -ms-grid-row:6;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:300;
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#helpButton {
+    display:inline-block;
+    -ms-grid-column:1;
+    -ms-grid-row:7;
+    border-radius:50%;
+    min-height:0;
+    min-width:0;
+    height:60px;
+    width:60px;
+    font-size:21pt;
+    text-align:center;
+    padding:0;
+    box-sizing:border-box;
+    margin-top:30px;
+}
+
+.bold {
+    font-weight:700;
+}

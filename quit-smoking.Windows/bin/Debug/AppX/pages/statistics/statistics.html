@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>statistics</title>
+
+    <link href="statistics.css" rel="stylesheet" />
+    <script src="statistics.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+</head>
+<body>
+    <div class="statistics fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Statistics</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="statsDiv">
+                <div id="howDaysDiv">Days you are smoke free</div>
+                <div id="howDaysOut">...</div>
+                <div id="howCigsDiv">Cigarettes avoided</div>
+                <div id="howCigsOut">...</div>
+                <div id="howLifeDiv">Life you saved</div>
+                <div id="howLifeOut">
+                    <span class="howLifeSpan" id="lifeYears"></span>
+                    <span class="howLifeSpan" id="lifeMonths"></span>
+                    <span class="howLifeSpan" id="lifeDays"></span>
+                    <span class="howLifeSpan" id="hours"></span>
+                    <span class="howLifeSpan" id="min"></span>
+                </div>
+                <div id="howMoneyDiv">Money you saved</div>
+                <div id="howMoneyOut">...</div>
+                <div id="howMonthDiv">Money you save every month</div>
+                <div id="howMonthOut">...</div>
+                <div id="howYearDiv">Money you save in a year</div>
+                <div id="howYearOut">...</div>
+                <button id="helpButton" aria-label=”Back” type="button">?</button>
+                <div id="helpFlyOut" data-win-control="WinJS.UI.Flyout">
+                    <p>
+                        <span class="bold">Navigation</span>
+                    </p>
+                    <p>
+                        On a PC simply <span class="bold">Right click</span> 
+                        anywhere to summon the navigation bar.
+                    </p>
+                    <p>
+                        If you are on tablet use <span class="bold">Two-Finger tap</span> gesture
+                        for right click to summon the navigation bar. 
+                        If two-finger tap gesture doesn't work you have to activate it. 
+                    </p>
+                </div>  
+            </div>
+        </section>
+    </div>
+</body>
+</html>

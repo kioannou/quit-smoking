@@ -6,87 +6,139 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>a161d788-257b-43cc-8d3c-2b67e9ff65bd</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B4774E3045993AB9D3C65FA2102A6A8702D8A577A417AB42D7B77CE4AC0BE5D7</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>a161d788-257b-43cc-8d3c-2b67e9ff65bd_1.0.0.0_neutral__yjbqw03f4wqkw</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>a161d788-257b-43cc-8d3c-2b67e9ff65bd_yjbqw03f4wqkw!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>a161d788-257b-43cc-8d3c-2b67e9ff65bd</RegisteredPackageID>
+    <PackageIdentityName>542ed5be-6fd7-4f19-9043-71baaf8a7e51</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>5B3F92560109E113B9B4CBCE39C4DA7862D6241D8BD8A09B5661F9BC95377A45</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>542ed5be-6fd7-4f19-9043-71baaf8a7e51_1.0.0.0_neutral__yjbqw03f4wqkw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>542ed5be-6fd7-4f19-9043-71baaf8a7e51_yjbqw03f4wqkw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>542ed5be-6fd7-4f19-9043-71baaf8a7e51</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Kostas Ioannou</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-24T12:30:28.147</Modified>
+      <Modified>2015-01-15T00:41:55.031</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\default.html">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-12-24T11:39:46.157</Modified>
+      <Modified>2014-12-28T22:47:17.735</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.html">
-      <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-12-25T23:14:02.293</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.html">
+      <PackagePath>pages\configuration\configuration.html</PackagePath>
+      <Modified>2015-01-14T14:49:02.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.html">
-      <PackagePath>pages\settings\settings.html</PackagePath>
-      <Modified>2014-12-24T16:42:47.279</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.html">
+      <PackagePath>pages\health\health.html</PackagePath>
+      <Modified>2015-01-15T16:02:56.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\logo.scale-100.png">
-      <PackagePath>images\logo.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.html">
+      <PackagePath>pages\motivation\motivation.html</PackagePath>
+      <Modified>2015-01-15T16:02:55.945</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.html">
+      <PackagePath>pages\statistics\statistics.html</PackagePath>
+      <Modified>2015-01-15T06:27:13.651</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\BadgeLogo.scale-180.png">
+      <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-02T14:38:24.000</Modified>
+      <Modified>2015-01-12T14:52:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\smalllogo.scale-100.png">
-      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\logo.scale-180.png">
+      <PackagePath>images\logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-02T14:38:24.000</Modified>
+      <Modified>2015-01-14T23:22:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\splashscreen.scale-100.png">
-      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\smalllogo.scale-180.png">
+      <PackagePath>images\smalllogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-02T14:38:24.000</Modified>
+      <Modified>2015-01-14T23:23:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\splashscreen.scale-180.png">
+      <PackagePath>images\splashscreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:38:05.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Square310x310Logo.scale-180.png">
+      <PackagePath>images\Square310x310Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:20:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Square70x70Logo.scale-180.png">
+      <PackagePath>images\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:22:45.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-100.png">
       <PackagePath>images\storelogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-02T14:38:24.000</Modified>
+      <Modified>2015-01-14T23:23:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Wide310x150Logo.scale-180.png">
+      <PackagePath>images\Wide310x150Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:21:39.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\backgroundtimer.js">
+      <PackagePath>js\backgroundtimer.js</PackagePath>
+      <Modified>2015-01-13T03:47:43.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-12-24T11:39:46.114</Modified>
+      <Modified>2014-12-27T02:25:49.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\navigator.js">
-      <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2014-12-24T11:39:46.565</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.js">
+      <PackagePath>pages\configuration\configuration.js</PackagePath>
+      <Modified>2015-01-15T13:42:31.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.js">
-      <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-12-25T23:13:57.299</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.js">
+      <PackagePath>pages\health\health.js</PackagePath>
+      <Modified>2015-01-13T15:51:33.492</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.js">
-      <PackagePath>pages\settings\settings.js</PackagePath>
-      <Modified>2014-12-25T00:37:09.599</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.js">
+      <PackagePath>pages\motivation\motivation.js</PackagePath>
+      <Modified>2015-01-13T19:02:19.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.js">
+      <PackagePath>pages\statistics\statistics.js</PackagePath>
+      <Modified>2015-01-15T04:48:41.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Shared\healthData.js">
+      <PackagePath>healthData.js</PackagePath>
+      <Modified>2015-01-15T05:47:28.298</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Shared\motivationData.js">
+      <PackagePath>motivationData.js</PackagePath>
+      <Modified>2014-12-27T01:27:29.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-12-24T11:39:46.272</Modified>
+      <Modified>2015-01-15T01:06:32.259</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\home\home.css">
-      <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-12-24T11:39:46.303</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.css">
+      <PackagePath>pages\configuration\configuration.css</PackagePath>
+      <Modified>2015-01-15T01:19:04.085</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\settings\settings.css">
-      <PackagePath>pages\settings\settings.css</PackagePath>
-      <Modified>2014-12-24T16:42:47.247</Modified>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.css">
+      <PackagePath>pages\health\health.css</PackagePath>
+      <Modified>2015-01-16T03:03:45.304</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.css">
+      <PackagePath>pages\motivation\motivation.css</PackagePath>
+      <Modified>2015-01-15T14:55:32.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.css">
+      <PackagePath>pages\statistics\statistics.css</PackagePath>
+      <Modified>2015-01-15T06:33:04.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-24T12:30:28.085</Modified>
+      <Modified>2015-01-15T00:41:54.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

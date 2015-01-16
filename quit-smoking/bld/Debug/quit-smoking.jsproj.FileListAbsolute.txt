@@ -12,4 +12,5 @@ c:\users\kostas ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-
 c:\users\kostas ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bld\Debug\qualifiers.txt.intermediate
 c:\users\kostas ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\kostas ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bld\Debug\ProjectArchitectures.txt
-C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\ReverseMap\resources.pri
+C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\cortanaVoiceCommands.xml
+C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\bin\Debug\ReverseMap\resources.pri

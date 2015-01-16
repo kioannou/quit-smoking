@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="a161d788-257b-43cc-8d3c-2b67e9ff65bd" Version="1.0.0.0" Publisher="CN=Kostas Ioannou" ProcessorArchitecture="neutral" />
+  <Identity Name="542ed5be-6fd7-4f19-9043-71baaf8a7e51" Version="1.0.0.0" Publisher="CN=Kostas Ioannou" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>quit_smoking.Windows</DisplayName>
     <PublisherDisplayName>Kostas Ioannou</PublisherDisplayName>
@@ -22,9 +22,18 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="quit_smoking.Windows" Description="quit_smoking.Windows" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
-        <m2:SplashScreen Image="images\splashscreen.png" />
+      <m2:VisualElements DisplayName="Stop smoking now!" Description="Windows 8 application that helps you quit smoking." ForegroundText="light" BackgroundColor="indigo" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png" ToastCapable="true">
+        <m2:LockScreen Notification="badgeAndTileText" BadgeLogo="images\BadgeLogo.png" />
+        <m2:DefaultTile Square310x310Logo="images\Square310x310Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" Square70x70Logo="images\Square70x70Logo.png"></m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="indigo" />
       </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\backgroundtimer.js">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
@@ -34,13 +43,13 @@
     <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
   </Dependencies>
   <build:Metadata>
-    <build:Item Name="SharedGUID" Value="a6621128-bb3f-47b2-b8c0-e2374d35295e" />
+    <build:Item Name="SharedGUID" Value="7aef00ee-3158-4258-a7dc-36a8f3ce8f8b" />
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Express 2013 for Windows" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
-    <build:Item Name="ProjectGUID" Value="a161d788-257b-43cc-8d3c-2b67e9ff65bd" />
+    <build:Item Name="ProjectGUID" Value="542ed5be-6fd7-4f19-9043-71baaf8a7e51" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
   </build:Metadata>
 </Package>

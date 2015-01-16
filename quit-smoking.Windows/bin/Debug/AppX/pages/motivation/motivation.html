@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>motivation</title>
+    
+    <link href="motivation.css" rel="stylesheet" />
+    <script src="motivation.js"></script>
+    <script src="../../motivationdata.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+</head>
+<body>
+    <div class="motivation fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Motivation</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div data-win-control="WinJS.Binding.Template" id="motivationTemplateWindows">
+                <p class="motivationParagraphWindows" data-win-bind="innerText:title"></p>
+            </div>
+            <div id="motivationDiv">
+                <div id="motivationNoteWindows">Click a topic on the list below for more information.</div>
+                <div data-win-control="WinJS.UI.ListView" id="motivationListViewWindows" data-win-options="{itemDataSource:MotivationData.motivationList.dataSource, itemTemplate:motivationTemplateWindows,layout: {type: WinJS.UI.ListLayout}}"></div>
+                <div id="motivationHost">
+                    <p id="tit"></p>
+                    <p id="q1"></p>
+                    <p id="a1"></p>
+                    <p id="q2"></p>
+                    <p id="a2"></p>
+                    <p id="q3"></p>
+                    <p id="a3"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

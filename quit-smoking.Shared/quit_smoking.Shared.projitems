@@ -3,8 +3,10 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>a6621128-bb3f-47b2-b8c0-e2374d35295e</SharedGUID>
+    <SharedGUID>7aef00ee-3158-4258-a7dc-36a8f3ce8f8b</SharedGUID>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)healthData.js" />
+    <Content Include="$(MSBuildThisFileDirectory)motivationData.js" />
   </ItemGroup>
 </Project>

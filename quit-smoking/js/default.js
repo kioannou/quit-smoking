@@ -23,6 +23,23 @@
             WinJS.Application.sessionState.previousExecutionState =
                 args.detail.previousExecutionState;
 
+
+            //Registering VCD.
+            var uri = new Windows.Foundation.Uri("ms-appx:///cortanaVoiceCommands.xml");
+            var storageFile =
+                Windows.Storage.StorageFile.getFileFromApplicationUriAsync(uri).then(
+                // Success function.
+                function (vcd) {
+                    Windows.Media.SpeechRecognition.VoiceCommandManager.installCommandSetsFromStorageFileAsync(vcd);
+                },
+                // Error function.
+                function (err) {
+                    WinJS.log && WinJS.log("File access failed.");
+                });
+
+
+
+
             //Checks if the application relaunched while already running. 
             //If so it delays 2000 ms the call of next() function for DOM to finish loading.
             if (typeof Home !== "undefined") {
@@ -59,6 +76,51 @@
 
 
         }
+
+        else if (args.detail.kind === activation.ActivationKind.voiceCommand) {
+            // This application has been activated with a voice command.
+
+            var speechRecognitionResult = args.detail.result;
+
+            // Get the name of the voice command. 
+            // For this example, we declare only one command.
+            var voiceCommandName = speechRecognitionResult.rulePath[0];
+
+            // Get the actual text spoken.
+            var textSpoken =
+                speechRecognitionResult.text !==
+                undefined ? speechRecognitionResult.text : "EXCEPTION";
+
+            // Get the value of Command/Navigate@Target.
+            // Navigate is a required child element of the Command element. 
+            // The Target attribute is optional and is typically used to 
+            // specify the page that the app should navigate to when it launches. 
+            // You can obtain the value of the Target attribute from the 
+            // SpeechRecognitionSemanticInterpretation.Properties dictionary 
+            // using the "NavigationTarget" key. 
+            // For this example, we declare only one command with no target.
+            var navigationTarget = speechRecognitionResult.semanticInterpretation.properties["NavigationTarget"][0];
+
+            if (voiceCommandName === "showRecognition") {
+                if (textSpoken.indexOf("Settings page") > -1) {
+                    // Code for default recognition.
+                    WinJS.Navigation.navigate("settings.html");
+                }
+                else if (textSpoken.indexOf("Start page") > -1) {
+                    // Code for default recognition.
+                }
+            }
+            else {
+                // There is no match for the voice command name.
+            }
+
+            var messageDialog =
+                new Windows.UI.Popups.MessageDialog(
+                textSpoken, "Text spoken");
+            messageDialog.showAsync();
+        }
+
+
 
     });
 

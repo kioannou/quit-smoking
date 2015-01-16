@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+
+  <CommandSet xml:lang="en-us" Name="stopSmokingVcd">
+    <CommandPrefix>Smoking</CommandPrefix>
+    <Example>Smoking open start page</Example>
+
+    <Command Name="openStartPage">
+      <Example>show me start page</Example>
+      <ListenFor>[Smoking] {command} Start [page]</ListenFor>
+      <Feedback>Opening Start page...</Feedback>
+      <Navigate Target="/pages/home/home.html"/>
+    </Command>
+    
+     <Command Name="openSettingsPage">
+      <Example>open Settings page</Example>
+      <ListenFor>[Smoking] {command} Settings [page]</ListenFor>
+      <Feedback>Opening Settings page...</Feedback>
+      <Navigate Target="/pages/settings/settings.html"/>
+    </Command>
+
+    <PhraseList Label="command">
+      <Item>open</Item>
+      <Item>show</Item>
+      <Item>show me</Item>
+      <Item>go to</Item>
+    </PhraseList>
+
+    
+
+  </CommandSet>
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>

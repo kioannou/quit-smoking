@@ -1,0 +1,78 @@
+﻿.health section {
+	margin: 1px 50px;
+}
+
+.phone .health .page-section {
+	margin: auto 24px;
+}
+
+.phone .health .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .health .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+/*Health List*/
+#healthListView {
+   margin-top:20px;
+   height:700px;
+   width:auto;
+}
+
+#healthListView .win-container:hover {
+    outline: none;
+} 
+
+/*#healthListView .win-listview .win-container{
+    height:80px;
+}*/
+
+/*Text that says*/
+#healthNote {
+    font-weight:600;
+    font-family:'Segoe UI';
+    height:auto;
+    font-size:10pt;
+    padding-left:5px;
+    color:lightgray;
+
+}
+
+.healthListTitle {
+    font-size:15pt;
+    font-family:'Segoe UI';
+    font-weight:300;
+    margin-top:3px;
+}
+
+.healthListText {
+    font-size:10pt;
+    font-weight:600;
+    font-family:'Segoe UI';
+}
+
+.forseen {
+    font-size:10pt;
+    font-weight:600;
+    color:mediumpurple;
+    margin-top:10px;
+    font-family:'Segoe UI';
+}
