@@ -1,0 +1,151 @@
+﻿.configuration section {
+	margin: 1px 50px;
+}
+
+.phone .configuration .page-section {
+	margin: auto 24px;
+
+}
+
+.phone .configuration .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+
+}
+
+.phone .configuration .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+
+
+#configurationDiv {
+    display:-ms-grid;
+    -ms-grid-columns: 1fr;
+   -ms-grid-row-span:6;
+}
+
+
+/*Date*/
+#dateHolder {
+    -ms-grid-row:1;
+}
+
+#dateText {
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-top:10px;
+}
+
+#datePick {
+    margin-top:10px;
+}
+
+/*Chosen date*/
+
+#chosenDiv {
+    -ms-grid-row:2;
+}
+
+#chosenText {
+    color:mediumpurple;
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-top:10px;
+}
+
+/*Cost*/
+#costHolder {
+    -ms-grid-row:3;
+}
+
+#costText {
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-top:40px;
+}
+
+#costInput {
+
+    border:none;
+    font-family:Calibri;
+    font-weight:600;
+    font-size:13pt;
+    height:30px;
+    width:200px;
+    background-color:lightgray;
+    margin-top:10px
+}
+
+/*Currency*/
+#currencyHolder {
+    -ms-grid-row:4;
+}
+
+#currencyText {
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-top:40px;
+}
+
+#currencySelect {
+    margin-top:10px;
+}
+
+/*Many*/
+#manyHolder {
+    -ms-grid-row:5;
+}
+
+#manyText {
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-top:40px;
+}
+
+#manyInput {
+    margin-top:10px;
+}
+
+#manyInputOut {
+    font-family:'Segoe UI';
+    font-size:11pt;
+    font-weight:600;
+    margin-left:15px;
+}
+
+/*Calculate Button*/
+#calculateButton {
+    -ms-grid-row:6;
+    font-family:'Segoe UI';
+    font-size:11pt;
+    background-color:indigo;
+    font-weight:600;
+    width:100px;
+    height:50px;
+    margin-top:30px;
+}
+
+    #calculateButton:hover {
+        background-color:rebeccapurple;
+    }

@@ -1,4 +1,3 @@
-C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\ReverseMap\resources.pri
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\AppxManifest.xml
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\quit-smoking.Windows.build.appxrecipe
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\priconfig.xml
@@ -13,3 +12,4 @@ C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\qualifiers.txt.intermediate
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Kostas Ioannou\Documents\Visual Studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\ProjectArchitectures.txt
+C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Debug\ReverseMap\resources.pri

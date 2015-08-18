@@ -55,30 +55,38 @@
     text-align:left;
 }
 
-#settingsNote {
-    color:gray;
-    height:auto;
-    margin-top:60px;
-    font-size:110%;
-    margin-top:39px;
-    padding-left:3px;
-}
+
 
 /*Settings BUTTON*/
 #settings {
-    font-size:370%;
+    font-size:300%;
     font-family:'Segoe WP';
     font-weight:200;
     text-decoration:none;
     color:inherit;
-    margin-top:-27px;
+    margin-top:30px;
 }
 
+#helpButton {
+    font-size:300%;
+    font-family:'Segoe WP';
+    font-weight:200;
+    text-decoration:none;
+    color:inherit;
+    margin-top:30px;
+    margin-left:30px;
+    border:none;
+}
 
 /*--------------------------------------------HEALTH LIST PIVOT----------------------------------------*/
 #healthListView {
    height:100%;
 }
+
+/*Every list container preserves height*/
+    #healthListView .win-container {
+        height:100%;
+    }
 
 #healthNote {
     color:gray;

@@ -37,7 +37,7 @@
     var numberOfAchievements = 1;
     var flat = 0;
 
-    if (days <= 3) {
+    if (days < 3) {
         flat = 3;
         numberOfAchievements = 1;
     } else if (days < 5) {
@@ -108,7 +108,7 @@
 
     //TOAST NOTIFICATION---------------------------------------------------------------------------------
 
-    if (days === 3 || days === 5 || days === 10 || days === 15 || days === 21 || days === 32 || days === 92 || days === 213 || days === 365 || days === 1826 || days === 3652) {
+    if ((days === 3 && flag === 0) || (days === 5 && flag < 2) || (days === 10 && flag < 3) || (days === 15 && flag < 4) || (days === 21 && flag < 5) || (days === 32 && flag < 6) || (days === 92 && flag < 7) || (days === 213 && flag < 8) || (days === 365 && flag < 9) || (days === 1826 && flag < 10) || (days === 3652 && flag < 11)) {
 
         var toastTemplate = notifications.ToastTemplateType.toastText01;
         var toastXml = notifications.ToastNotificationManager.getTemplateContent(toastTemplate);

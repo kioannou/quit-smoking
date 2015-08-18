@@ -55,6 +55,7 @@
         var savedCurrency = roamingSettings.values["currency"];
         var savedHowMany = roamingSettings.values["numberPerDay"];
 
+        var lastDate = roamingSettings.values["userLastDate"];
 
         if (savedDay && savedMonth && savedYear && savedCost && savedHowMany) {
 
@@ -110,12 +111,58 @@
             var moneyMonth = (savedCost / 20) * (savedHowMany * 30);
             var moneyYear = moneyMonth * 12;
 
+            //Number of achievements mechanism.
+            var numberOfAchievements = 1;
+            var flat = 0;
+
+            if (days <= 3) {
+                flat = 3;
+                numberOfAchievements = 1;
+            } else if (days < 5) {
+                flat = 5;
+                numberOfAchievements = 2;
+            } else if (days < 10) {
+                flat = 10;
+                numberOfAchievements = 3;
+            } else if (days < 15) {
+                flat = 15;
+                numberOfAchievements = 4;
+            } else if (days < 21) {
+                flat = 21;
+                numberOfAchievements = 5;
+            } else if (days < 32) {
+                flat = 32;
+                numberOfAchievements = 6;
+            } else if (days < 92) {
+                flat = 92;
+                numberOfAchievements = 7;
+            } else if (days < 213) {
+                flat = 213;
+                numberOfAchievements = 8;
+            } else if (days < 365) {
+                flat = 365;
+                numberOfAchievements = 9;
+            } else if (days < 1826) {
+                flat = 1826;
+                numberOfAchievements = 10;
+            } else if (days < 3652) {
+                flat = 3652;
+                numberOfAchievements = 11;
+            } else {
+                numberOfAchievements = 12;
+            };
+
+            var res = flat - days;
+
             //Passing all the values to outputs.
             document.querySelector("#howDaysOut").innerHTML = days;
             document.querySelector("#howCigsOut").innerHTML = cigarettesNotSmoked;
             document.querySelector("#howMoneyOut").innerHTML = moneySaved.toFixed(1) + " " + savedCurrency;
             document.querySelector("#howMonthOut").innerHTML = moneyMonth.toFixed(1) + " " + savedCurrency;
             document.querySelector("#howYearOut").innerHTML = moneyYear.toFixed(1) + " " + savedCurrency;
+            document.getElementById("unlockedOut").innerHTML = numberOfAchievements;
+            document.getElementById("nextOut").innerHTML = res+" Day(s)";
+            document.getElementById("dateOut").innerHTML = lastDate;
         }
     }
 

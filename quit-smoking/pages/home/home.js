@@ -11,6 +11,8 @@
             //Registering the event handler for navigation to Settings.html.
             WinJS.Utilities.query("a").listen("click", this.navigateToSettings, false);
 
+            WinJS.Utilities.query("#helpButton").listen("click", helpDialog, false);
+
             //Defining the Home namespace and exposing the total() function.
             WinJS.Namespace.define("Home", {
                 total: this.total
@@ -20,11 +22,7 @@
             this.total();
 
 
-            //If there is no configuration alerts the user.
-            var check = document.getElementById("days").innerHTML;
-            if (check === "--") {
-                this.alert("Go to Settings for configuration");
-            };
+            
 
             //Registering event handler for clicking a motivation List item.
             var list = document.getElementById("motivationListView");
@@ -213,6 +211,10 @@
 
     }
 
+    function helpDialog() {
+        var msgBoxhelp = new Windows.UI.Popups.MessageDialog("For a new configuration go to Settings.");
+        msgBoxhelp.showAsync();
+    }
 
 
 })();

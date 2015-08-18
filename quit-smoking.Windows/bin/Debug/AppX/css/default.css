@@ -1,12 +1,13 @@
 ﻿.fragment header[role=banner] {
         /* Define a grid with columns for the back button and page title. */
        margin-left:50px;
-       margin-top:30px;
+       margin-top:20px;
+      
     }
 
 #contentHost {
     
-    height:100%;
+    height:calc(100% - 50px);
     margin: 24px 24px 24px 24px;
 }
 

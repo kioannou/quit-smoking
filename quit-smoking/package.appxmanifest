@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.2" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" />
+  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.8" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" />
   <mp:PhoneIdentity PhoneProductId="233e9f1b-ccee-4c14-9c9f-87824e2638c0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Stop smoking now</DisplayName>

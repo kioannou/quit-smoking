@@ -25,9 +25,9 @@
           t1: "What Is Cancer?",
           t2: "How Is Smoking Related to Cancer?",
           t3: "How Can Smoking-Related Cancers Be Prevented?",
-          epi: "Quitting smoking lowers the risks for cancers of the lung, mouth, throat, esophagus, and larynx. •Within 5 years of quitting, your chance of cancer of the mouth, throat, esophagus, and bladder is cut in half.cancer drops by half. If nobody smoked, one of every three cancer deaths in the United States would not happen.",
+          epi: "Quitting smoking lowers the risks for cancers of the lung, mouth, throat, esophagus, and larynx. Within 5 years of quitting, your chance of cancer of the mouth, throat, esophagus, and bladder is cut in half, chance of cancer drops by half. If nobody smoked, one of every three cancer deaths in the United States would not happen.",
           pro: "Cancer refers to diseases in which abnormal cells divide out of control and are able to invade other tissues. Cancer cells can spread to other parts of the body through the blood and lymph systems.",
-          main: "Poisons in cigarette smoke can weaken the body’s immune system, making it harder to kill cancer cells. When this happens, cancer cells keep growing without being stopped. •Poisons in tobacco smoke can damage or change a cell's DNA. DNA is the cell's \"instruction manual\" that controls a cell's normal growth and function. When DNA is damaged, a cell can begin growing out of control and create a cancer tumor."
+          main: "Poisons in cigarette smoke can weaken the body’s immune system, making it harder to kill cancer cells. When this happens, cancer cells keep growing without being stopped. Poisons in tobacco smoke can damage or change a cell's DNA. DNA is the cell's \"instruction manual\" that controls a cell's normal growth and function. When DNA is damaged, a cell can begin growing out of control and create a cancer tumor."
       },
       {
           type: "item", title: "COPD",

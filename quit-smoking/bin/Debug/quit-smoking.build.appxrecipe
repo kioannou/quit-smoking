@@ -16,9 +16,6 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\cortanaVoiceCommands.xml">
-      <PackagePath>cortanaVoiceCommands.xml</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>

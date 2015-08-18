@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-76G48AVRF30</Machine>
+    <WindowsUser>Kostas Ioannou</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>59648kostazj.Stopsmokingnow</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>4646F2F13996C3DF802D7948E53046E4D8334A03734621FC2869948E023B6C0F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>59648kostazj.Stopsmokingnow_1.1.0.21_neutral__wdq9nd0dqqsej</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>59648kostazj.Stopsmokingnow_wdq9nd0dqqsej!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>59648kostazj.Stopsmokingnow</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=056AB890-279D-455F-803F-4F08F66C2346</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.21</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-20T05:38:19.333</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-01-16T16:26:29.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.html">
+      <PackagePath>pages\configuration\configuration.html</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.html">
+      <PackagePath>pages\health\health.html</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.html">
+      <PackagePath>pages\motivation\motivation.html</PackagePath>
+      <Modified>2015-01-16T22:59:52.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.html">
+      <PackagePath>pages\statistics\statistics.html</PackagePath>
+      <Modified>2015-01-17T02:23:49.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\BadgeLogo.scale-180.png">
+      <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-20T05:04:32.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Logo.scale-180.png">
+      <PackagePath>images\Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\smalllogo.scale-180.png">
+      <PackagePath>images\smalllogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-16T16:26:29.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\splashscreen.scale-180.png">
+      <PackagePath>images\splashscreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T23:38:05.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Square310x310Logo.scale-180.png">
+      <PackagePath>images\Square310x310Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-16T16:26:29.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Square70x70Logo.scale-180.png">
+      <PackagePath>images\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-16T16:26:29.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-180.png">
+      <PackagePath>images\storelogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-20T00:36:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Wide310x150Logo.scale-180.png">
+      <PackagePath>images\Wide310x150Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-16T16:26:29.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\backgroundtimer.js">
+      <PackagePath>js\backgroundtimer.js</PackagePath>
+      <Modified>2015-01-19T13:09:06.461</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.js">
+      <PackagePath>pages\configuration\configuration.js</PackagePath>
+      <Modified>2015-01-17T17:09:56.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.js">
+      <PackagePath>pages\health\health.js</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.js">
+      <PackagePath>pages\motivation\motivation.js</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.js">
+      <PackagePath>pages\statistics\statistics.js</PackagePath>
+      <Modified>2015-01-16T18:14:03.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Shared\healthData.js">
+      <PackagePath>healthData.js</PackagePath>
+      <Modified>2015-01-16T16:26:29.846</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Shared\motivationData.js">
+      <PackagePath>motivationData.js</PackagePath>
+      <Modified>2015-01-17T17:17:33.025</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-01-17T04:35:13.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\configuration\configuration.css">
+      <PackagePath>pages\configuration\configuration.css</PackagePath>
+      <Modified>2015-01-16T16:26:29.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\health\health.css">
+      <PackagePath>pages\health\health.css</PackagePath>
+      <Modified>2015-01-17T04:25:56.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\motivation\motivation.css">
+      <PackagePath>pages\motivation\motivation.css</PackagePath>
+      <Modified>2015-01-17T00:35:12.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\pages\statistics\statistics.css">
+      <PackagePath>pages\statistics\statistics.css</PackagePath>
+      <Modified>2015-01-17T03:12:09.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bin\Release\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-01-20T05:38:19.025</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

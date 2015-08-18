@@ -6,7 +6,7 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>542ed5be-6fd7-4f19-9043-71baaf8a7e51</PackageIdentityName>
+    <PackageIdentityName>59648kostazj.Stopsmokingnow</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\bld\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -35,8 +35,8 @@
       <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\logo.scale-180.png">
-      <PackagePath>images\logo.scale-180.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Logo.scale-180.png">
+      <PackagePath>images\Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\smalllogo.scale-180.png">
@@ -55,8 +55,8 @@
       <PackagePath>images\Square70x70Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-100.png">
-      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\storelogo.scale-180.png">
+      <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kostas Ioannou\documents\visual studio 2013\Projects\quit-smoking\quit-smoking.Windows\images\Wide310x150Logo.scale-180.png">

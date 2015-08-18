@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.1" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" ProcessorArchitecture="neutral" />
+  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.8" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="233e9f1b-ccee-4c14-9c9f-87824e2638c0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Stop smoking now</DisplayName>
@@ -23,22 +23,32 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m3:VisualElements DisplayName="Stop smoking now!" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Application that helps you quit smoking" ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Stop smoking now!" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Windows phone application that helps you quit smoking." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
         <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png"></m3:DefaultTile>
-        <m3:SplashScreen Image="images\SplashScreen.png" />
+        <m3:SplashScreen Image="images\SplashScreen.png" BackgroundColor="indigo" />
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />
         </m3:InitialRotationPreference>
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\backgroundtimer.js">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
   <Dependencies>
     <PackageDependency Name="Microsoft.Phone.WinJS.2.1" MinVersion="1.0.9651.0" />
   </Dependencies>
   <build:Metadata>
+    <build:Item Name="SharedGUID" Value="7aef00ee-3158-4258-a7dc-36a8f3ce8f8b" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Express 2013 for Windows" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />

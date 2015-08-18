@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="59648kostazj.Stopsmokingnow" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="default.html" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/default.html">
+				<Candidate type="Path">
+					<Value>default.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="healthData.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/healthData.js">
+				<Candidate type="Path">
+					<Value>healthData.js</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="motivationData.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/motivationData.js">
+				<Candidate type="Path">
+					<Value>motivationData.js</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/BadgeLogo.png"/>
+				<NamedResource name="logo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/logo.png"/>
+				<NamedResource name="smalllogo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/smalllogo.png"/>
+				<NamedResource name="splashscreen.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/splashscreen.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="storelogo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/storelogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\storelogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/images/Wide310x150Logo.png"/>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="backgroundtimer.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/js/backgroundtimer.js">
+					<Candidate type="Path">
+						<Value>js\backgroundtimer.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="default.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/js/default.js">
+					<Candidate type="Path">
+						<Value>js\default.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="pages">
+				<ResourceMapSubtree name="configuration">
+					<NamedResource name="configuration.css" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/configuration/configuration.css">
+						<Candidate type="Path">
+							<Value>pages\configuration\configuration.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="configuration.html" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/configuration/configuration.html">
+						<Candidate type="Path">
+							<Value>pages\configuration\configuration.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="configuration.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/configuration/configuration.js">
+						<Candidate type="Path">
+							<Value>pages\configuration\configuration.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="health">
+					<NamedResource name="health.css" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/health/health.css">
+						<Candidate type="Path">
+							<Value>pages\health\health.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="health.html" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/health/health.html">
+						<Candidate type="Path">
+							<Value>pages\health\health.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="health.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/health/health.js">
+						<Candidate type="Path">
+							<Value>pages\health\health.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="motivation">
+					<NamedResource name="motivation.css" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/motivation/motivation.css">
+						<Candidate type="Path">
+							<Value>pages\motivation\motivation.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="motivation.html" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/motivation/motivation.html">
+						<Candidate type="Path">
+							<Value>pages\motivation\motivation.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="motivation.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/motivation/motivation.js">
+						<Candidate type="Path">
+							<Value>pages\motivation\motivation.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="statistics">
+					<NamedResource name="statistics.css" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/statistics/statistics.css">
+						<Candidate type="Path">
+							<Value>pages\statistics\statistics.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="statistics.html" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/statistics/statistics.html">
+						<Candidate type="Path">
+							<Value>pages\statistics\statistics.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="statistics.js" uri="ms-resource://59648kostazj.Stopsmokingnow/Files/pages/statistics/statistics.js">
+						<Candidate type="Path">
+							<Value>pages\statistics\statistics.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

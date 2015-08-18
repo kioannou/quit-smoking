@@ -3,12 +3,12 @@ motivationData.js
 css\default.css
 default.html
 images\BadgeLogo.scale-180.png
-images\logo.scale-180.png
+images\Logo.scale-180.png
 images\smalllogo.scale-180.png
 images\splashscreen.scale-180.png
 images\Square310x310Logo.scale-180.png
 images\Square70x70Logo.scale-180.png
-images\storelogo.scale-100.png
+images\storelogo.scale-180.png
 images\Wide310x150Logo.scale-180.png
 js\backgroundtimer.js
 js\default.js

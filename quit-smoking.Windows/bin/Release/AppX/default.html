@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>quit_smoking.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- quit_smoking.Windows references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="navBar" data-win-control="WinJS.UI.NavBar">
+        <div id="globalNav" data-win-control="WinJS.UI.NavBarContainer">
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                 label: 'Statistics',
+                 tooltip: 'Take me to Start',
+                 id:'statsButton',
+                 icon: WinJS.UI.AppBarIcon.home,
+                 location: '/pages/statistics/statistics.html',
+                 }">
+
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                 label: 'Health',
+                 tooltip: 'Take me to Health',
+                 id:'healthButton',
+                 icon: WinJS.UI.AppBarIcon.solidstar,
+                 location: '/pages/health/health.html',
+                 }">
+
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                 label: 'Motivation',
+                 tooltip: 'Take me to Motivation',
+                 id:'motivationButton',
+                 icon: WinJS.UI.AppBarIcon.page,
+                 location: '/pages/motivation/motivation.html',
+                 }">
+
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                 label: 'Configuration',
+                 tooltip: 'Take me to Configuration',
+                 id:'configurationButton',
+                 icon: WinJS.UI.AppBarIcon.settings,
+                 location: '/pages/configuration/configuration.html',
+                 }">
+
+            </div>
+        </div>
+    </div>
+    <div id="contentHost">
+    </div>
+</body>
+</html>

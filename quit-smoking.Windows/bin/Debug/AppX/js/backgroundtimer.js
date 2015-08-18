@@ -37,7 +37,7 @@
     var numberOfAchievements = 1;
     var flat = 0;
 
-    if (days <= 3) {
+    if (days < 3) {
         flat = 3;
         numberOfAchievements = 1;
     } else if (days < 5) {
@@ -78,10 +78,10 @@
 
     //How the tile should look like.
     var tileTextAttributes = tileXml.getElementsByTagName("text");
-    tileTextAttributes[0].appendChild(tileXml.createTextNode("Smoke free: " + days + " days."));
-    tileTextAttributes[1].appendChild(tileXml.createTextNode("Cigs avoided: " + cigarettesNotSmoked));
-    tileTextAttributes[2].appendChild(tileXml.createTextNode("Money saved: " + moneySaved + backCurrency));
-    tileTextAttributes[3].appendChild(tileXml.createTextNode("Achievements: " + numberOfAchievements + "/12"));
+    tileTextAttributes[0].appendChild(tileXml.createTextNode("Days: " + days));
+    tileTextAttributes[1].appendChild(tileXml.createTextNode("Cigs: " + cigarettesNotSmoked));
+    tileTextAttributes[2].appendChild(tileXml.createTextNode("Money: " + moneySaved + backCurrency));
+    tileTextAttributes[3].appendChild(tileXml.createTextNode("Achieved: " + numberOfAchievements + "/12"));
 
     //Wide version of the tile.
 
@@ -97,6 +97,28 @@
     var node = tileXml.importNode(wideTileXml.getElementsByTagName("binding").item(0), true);
     tileXml.getElementsByTagName("visual").item(0).appendChild(node);
 
+    //Large version of tile.
+
+    var largeTemplate = notifications.TileTemplateType.tileSquare310x310TextList01;
+    var largeTileXml = notifications.TileUpdateManager.getTemplateContent(largeTemplate);
+    var largeTextAttributes = largeTileXml.getElementsByTagName("text");
+    largeTextAttributes[0].appendChild(largeTileXml.createTextNode("Days passed: " + days));
+    largeTextAttributes[1].appendChild(largeTileXml.createTextNode("Achievements: " + numberOfAchievements + "/12"));
+    largeTextAttributes[2].appendChild(largeTileXml.createTextNode("Next achievement in " + res + " day(s)"));
+
+    var lastDate = roamingSettings.values["userLastDate"];
+    largeTextAttributes[3].appendChild(largeTileXml.createTextNode("Avoided " + cigarettesNotSmoked + " cigs"));
+    largeTextAttributes[4].appendChild(largeTileXml.createTextNode("Date you quitted: " + lastDate));
+    //largeTextAttributes[5].appendChild(largeTileXml.createTextNode("jhjh"));
+
+
+    var monthly = (backCost / 20) * (backMany * 30);
+    largeTextAttributes[6].appendChild(largeTileXml.createTextNode("Money: " + moneySaved + backCurrency));
+    largeTextAttributes[7].appendChild(largeTileXml.createTextNode("Monthly: " + monthly + backCurrency));
+    largeTextAttributes[8].appendChild(largeTileXml.createTextNode("Yearly: " + monthly * 12 + backCurrency));
+   
+    var node = tileXml.importNode(largeTileXml.getElementsByTagName("binding").item(0), true);
+    tileXml.getElementsByTagName("visual").item(0).appendChild(node);
 
     //Create the notification based on the XML content you've specified.
     var tileNotification = new notifications.TileNotification(tileXml);
@@ -105,11 +127,14 @@
     notifications.TileUpdateManager.createTileUpdaterForApplication().update(tileNotification);
 
 
-
+    var flag = roamingSettings.values["theFlag"];
     //TOAST NOTIFICATION---------------------------------------------------------------------------------
 
-    if (days === 3 || days === 5 || days === 10 || days === 15 || days === 21 || days === 32 || days === 92 || days === 213 || days === 365 || days === 1826 || days === 3652) {
+    if ((days === 3 && flag === 0) || (days === 5 && flag < 2) || (days === 10 && flag < 3) || (days === 15 && flag < 4) || (days === 21 && flag < 5) || (days === 32 && flag < 6) || (days === 92 && flag < 7) || (days === 213 && flag < 8) || (days === 365 && flag < 9) || (days === 1826 && flag < 10) || (days === 3652 && flag < 11) ) {
 
+        var flag = flag + 1;
+        roamingSettings.values["theFlag"] = flag;
+        
         var toastTemplate = notifications.ToastTemplateType.toastText01;
         var toastXml = notifications.ToastNotificationManager.getTemplateContent(toastTemplate);
 

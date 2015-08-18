@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>health</title>
+
+    <link href="health.css" rel="stylesheet" />
+    <script src="health.js"></script>
+    <script src="../../healthdata.js"></script>
+</head>
+<body>
+    <div class="health fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Health</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <!-- HealthList Template -->
+            <div data-win-control="WinJS.Binding.Template" id="healthTemplate">
+                <div class="forseen" data-win-bind="innerHTML:seed"> </div>
+                <div class="healthListTitle" data-win-bind="innerHTML:after"></div>
+                <div class="healthListText" data-win-bind="innerHTML:text"></div>
+            </div>
+            <!-- Health ListView -->
+            <div id="healthNote">List of health achievements. Each achievement describes the effects taking place after quitting smoking.</div>
+            <div data-win-control="WinJS.UI.ListView" id="healthListView" data-win-options="{itemDataSource:HealthData.healthList.dataSource,itemTemplate:healthTemplate,layout: {type: WinJS.UI.ListLayout},selectionMode:'none',}">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.2" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" ProcessorArchitecture="neutral" />
+  <Identity Name="59648kostazj.Stopsmokingnow" Version="1.1.0.8" Publisher="CN=056AB890-279D-455F-803F-4F08F66C2346" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="233e9f1b-ccee-4c14-9c9f-87824e2638c0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Stop smoking now</DisplayName>

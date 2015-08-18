@@ -22,8 +22,11 @@
 	-ms-grid-columns: 1fr;
 	-ms-grid-rows: 128px 1fr;
 	display: -ms-grid;
-	height: 100%;
+	height:100%;
 	width: 100%;
+    overflow-x:auto;
+    overflow-y:auto;
+    margin-bottom:100px;
 }
 
 	.fragment section[role=main] {
@@ -33,8 +36,8 @@
 
 #statsDiv {
     display:-ms-grid;
-    -ms-grid-column-span:2;
-    -ms-grid-row-span:7;
+    -ms-grid-column-span:4;
+    -ms-grid-row-span:6;
     font-family:'Segoe UI';
     text-align:center;
    
@@ -197,20 +200,100 @@
     height:70px;
 }
 
+#unlockedDiv {
+    -ms-grid-column:3;
+    -ms-grid-row:1;
+   margin-top: 10px;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#unlockedOut {
+    -ms-grid-column:3;
+    -ms-grid-row:2;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:300;
+    font-size:21pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#nextDiv {
+    -ms-grid-column:3;
+    -ms-grid-row:3;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#nextOut {
+    -ms-grid-column:3;
+    -ms-grid-row:4;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:500;
+    font-size:15pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
+#dateDiv {
+    -ms-grid-column:3;
+    -ms-grid-row:5;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:600;
+    font-size:11pt;
+    font-family:'Segoe UI';
+        padding-top:13px;
+    width:200px;
+    height:70px;
+}
+
+#dateOut {
+    -ms-grid-column:3;
+    -ms-grid-row:6;
+    margin-left: 40px;
+    background-color:indigo;
+    font-weight:500;
+    font-size:15pt;
+    font-family:'Segoe UI';
+
+    width:200px;
+    height:70px;
+}
+
 #helpButton {
     display:inline-block;
-    -ms-grid-column:1;
-    -ms-grid-row:7;
+    
     border-radius:50%;
     min-height:0;
     min-width:0;
-    height:60px;
-    width:60px;
+    height:40px;
+    width:40px;
     font-size:21pt;
     text-align:center;
     padding:0;
     box-sizing:border-box;
-    margin-top:30px;
+    margin-left:10px;
 }
 
 .bold {
